@@ -17,7 +17,7 @@ const Layout = ({ children }) => {
     }
   `)
 
-  const [windowLoc, setWindowLoc] = useState("")
+  const [windowLoc, setWindowLoc] = useState("/")
 
   useEffect(() => {
     setWindowLoc(window.location.pathname)
