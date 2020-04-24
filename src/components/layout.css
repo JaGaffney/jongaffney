@@ -8,17 +8,11 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
-article,
 aside,
 details,
 figcaption,
 figure,
-footer,
-header,
-main,
 menu,
-nav,
-section,
 summary {
   display: block;
 }
@@ -200,7 +194,7 @@ html {
 }
 body {
   color: hsla(0, 0%, 0%, 0.8);
-  font-family: georgia, serif;
+  font-family: proxima-nova, sans-serif;
   font-weight: normal;
   word-wrap: break-word;
   font-kerning: normal;

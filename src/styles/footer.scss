@@ -1,0 +1,41 @@
+.footer-container {
+  width: 25%;
+  align-self: center;
+  justify-items: center;
+  a {
+    outline: none;
+    &:hover {
+      color: var(--dominant);
+    }
+    &:focus {
+      color: var(--accent);
+    }
+  }
+  ul {
+    margin: 0;
+    list-style: none;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    li {
+      a {
+        color: var(--light);
+      }
+    }
+  }
+}
+.footer-link {
+  text-align: center;
+  color: var(--light);
+  display: block;
+  font-size: 0.9rem;
+  font-style: italic;
+  margin: 0 0 1rem 0;
+}
+.footer-copyright {
+  width: 100%;
+  color: var(--light);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
