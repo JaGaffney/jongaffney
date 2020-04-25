@@ -26,7 +26,7 @@ const Projects = () => {
     description:
       "Nostrud consectetur velit culpa est velit consequat dolore reprehenderit.",
     image: LandingImage,
-    tags: [, "JAM stack", "Gatsby", "AWS S3", "Netlify"],
+    tags: ["JAM stack", "Gatsby", "AWS S3", "Netlify"],
   }
 
   return (

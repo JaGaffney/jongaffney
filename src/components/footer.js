@@ -1,6 +1,6 @@
 import React from "react"
 
-import { FiGithub, FiGlobe, FiYoutube } from "react-icons/fi"
+import { FiGithub, FiYoutube } from "react-icons/fi"
 import { FaLinkedinIn } from "react-icons/fa"
 
 const Footer = () => {

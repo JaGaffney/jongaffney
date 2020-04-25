@@ -10,6 +10,7 @@ const About = () => {
           development. I build web applications written with popular frameworks
           such as Laravel, Express, Django, Flask and using React as a frontend.
         </p>
+        <button>Link to content here</button>
       </div>
     </div>
   )

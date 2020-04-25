@@ -10,7 +10,7 @@ import Showreel from "../components/Landing/Showreel"
 
 const IndexPage = () => (
   <Layout>
-    <SEO title="Jon Gaffney" />
+    <SEO title="" />
     <Hero />
     <About />
     <Projects />
