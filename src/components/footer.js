@@ -1,7 +1,7 @@
 import React from "react"
 
 import { FiGithub, FiGlobe, FiYoutube } from "react-icons/fi"
-import { FaDiscord } from "react-icons/fa"
+import { FaLinkedinIn } from "react-icons/fa"
 
 const Footer = () => {
   return (
@@ -18,10 +18,10 @@ const Footer = () => {
         </li>
         <li>
           <a
-            href="https://jongaffney.tech/"
-            aria-label="Link to my portfolio website"
+            href="https://www.linkedin.com/in/jon-gaffney-13a100118/"
+            aria-label="Link to my LinkedIn"
           >
-            <FiGlobe
+            <FaLinkedinIn
               vertical-align="middle"
               horizontal-align="middle"
               size="2.5em"
@@ -31,18 +31,6 @@ const Footer = () => {
         <li>
           <a href="https://jongaffney.tech/" aria-label="Link to Youtube">
             <FiYoutube
-              vertical-align="middle"
-              horizontal-align="middle"
-              size="2.5em"
-            />
-          </a>
-        </li>
-        <li>
-          <a
-            href="https://discord.gg/eZ2BBWu"
-            aria-label="Link to a anime discord"
-          >
-            <FaDiscord
               vertical-align="middle"
               horizontal-align="middle"
               size="2.5em"

@@ -3,6 +3,7 @@
   align-self: center;
   justify-items: center;
   a {
+    color: var(--light);
     outline: none;
     &:hover {
       color: var(--dominant);

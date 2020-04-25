@@ -113,16 +113,29 @@
 .projects-component__content-title {
   margin: 0;
   padding: 0;
-  color: var(--accent);
   z-index: 2;
-  grid-column: 7 / span 4;
+  grid-column: 7 / -1;
   grid-row: 1;
+  a {
+    text-decoration: none;
+  }
+  h1 {
+    margin: 0;
+    padding: 0 0 1rem 0;
+    color: var(--accent);
+    border-bottom: solid 7px var(--accent);
+    cursor: pointer;
+    &:hover {
+      color: var(--dominant);
+      border-bottom: solid 7px var(--dominant);
+    }
+  }
 }
 .projects-component__content-data {
   z-index: 2;
   grid-column: 7 / span 4;
   grid-row: 2 / span 3;
-  background: var(--blue700);
+  background: var(--accent);
   color: var(--blue100);
   border-radius: 2rem;
   height: 15rem;
@@ -143,13 +156,14 @@
     justify-content: space-evenly;
     align-items: center;
     li {
-      border: solid 2px var(--blue100);
+      border: solid 2px var(--blue800);
       margin: 0.2rem;
       text-align: center;
       height: 2.5rem;
       width: 10rem;
       padding: 0.5rem;
-      background: var(--blue900);
+      color: var(--blue800);
+      background: var(--blue100);
       border-radius: 20px;
     }
   }
@@ -166,6 +180,6 @@
 // Showreel
 //
 .landing-showreel {
-  background: var(--blue600);
+  background: var(--gray400);
   height: 60rem;
 }
