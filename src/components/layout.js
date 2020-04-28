@@ -10,7 +10,7 @@ const Layout = ({ children }) => {
       <Header />
       <div>
         <main>{children}</main>
-        <footer>
+        <footer className="hero-pattern__light">
           <Footer />
         </footer>
       </div>

@@ -19,7 +19,7 @@ const ProjectComponent = props => {
           })}
         </ul>
       </div>
-      <div className="projects-component__banner"></div>
+      <div className="projects-component__banner hero-pattern__light"></div>
     </div>
   )
 }

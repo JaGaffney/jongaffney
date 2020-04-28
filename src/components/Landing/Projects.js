@@ -15,7 +15,7 @@ const Projects = () => {
     tags: ["React", "Electron", "Flask", "Django", "AWS"],
   }
   const dynamicSites = {
-    name: "Dynamically driven websites",
+    name: "Data driven websites",
     description:
       "Nostrud consectetur velit culpa est velit consequat dolore reprehenderit. Nostrud consectetur velit culpa est velit consequat dolore reprehenderit.",
     image: AfnafImage,
@@ -26,7 +26,7 @@ const Projects = () => {
     description:
       "Nostrud consectetur velit culpa est velit consequat dolore reprehenderit.",
     image: LandingImage,
-    tags: ["JAM stack", "Gatsby", "AWS S3", "Netlify"],
+    tags: ["JAM stack", "Gatsby", "AWS-S3", "Netlify"],
   }
 
   return (

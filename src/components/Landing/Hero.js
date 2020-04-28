@@ -16,7 +16,7 @@ const Hero = () => {
   `)
 
   return (
-    <header className="hero__container">
+    <header className="hero__container hero__container-icon">
       <Img
         fluid={data.placeholderImage.childImageSharp.fluid}
         className="hero__image"
