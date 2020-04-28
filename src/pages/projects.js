@@ -31,7 +31,7 @@ const ProjectsPage = () => {
       }
     }
   `)
-  console.log(data)
+  //console.log(data)
 
   return (
     <Layout>

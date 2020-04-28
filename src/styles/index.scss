@@ -36,9 +36,11 @@
 
   --dominant: var(--green);
   --accent: var(--blue700);
-  --third: var(--purple);
+  --third: var(--gold);
 
   --background-main: var(--gray200);
+
+  --speed: 500ms;
 }
 
 body {
@@ -49,4 +51,15 @@ body {
     var(--gray200)
   );
   background: linear-gradient(to bottom, var(--gray100), var(--gray200));
+}
+
+ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  color: var(--text-color);
+  text-decoration: none;
 }
