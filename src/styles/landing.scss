@@ -27,26 +27,35 @@
   display: flex;
   justify-content: flex-end;
   margin: 2rem 5rem 2rem 0;
-  height: 2.2rem;
-  position: sticky;
-  top: 0;
+  height: 2.5rem;
+  position: fixed;
+  right: -50px;
 
   div {
     li {
-      background: var(--gray300);
-      border: solid 2px var(--gray700);
-      border-radius: 50%;
-      height: 2.2rem;
-      width: 2.2rem;
-      margin: auto;
-      &:hover {
-        background: var(--gray800);
-        border: solid 2px var(--accent);
-      }
       a {
-        display: flex;
       }
     }
+  }
+}
+.header-icon {
+  height: 2.5rem;
+  width: 2.5rem;
+  background: var(--gray300);
+  border: solid 2px var(--gray700);
+  border-radius: 50%;
+  display: flex;
+  &:hover {
+    background: var(--gray700);
+    border: solid 2px var(--gray700);
+  }
+  &:focus {
+    background: var(--gray700);
+    border: solid 2px var(--gray700);
+  }
+  svg {
+    margin: 0;
+    margin: auto;
   }
 }
 
@@ -57,9 +66,6 @@
   flex-wrap: wrap;
   justify-content: center;
   z-index: 2;
-  img {
-    display: none;
-  }
 }
 .hero__content-text {
   border-left: solid 8px var(--accent);

@@ -1,6 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
+import LogoImage from "../../images/logo.svg"
 
 import Navbar from "../Header/Navbar"
 
@@ -30,6 +31,7 @@ const Hero = () => {
       <div className="hero__content-container">
         <div className="hero__content">
           <div className="hero__content-text">
+            <img src={LogoImage} alt="logo" />
             <h1>
               Fullstack <span>web Developer</span>
             </h1>

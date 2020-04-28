@@ -82,7 +82,7 @@ const Footer = () => {
 
       <div className="footer-copyright">
         <span>
-          © Jon Gaffney{" "}
+          2020 © Jon Gaffney{" "}
           <a href="https://jongaffney.tech/">https://jongaffney.tech/</a>
         </span>
       </div>

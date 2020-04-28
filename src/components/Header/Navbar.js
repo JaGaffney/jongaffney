@@ -13,7 +13,7 @@ function NavItem(props) {
     <li className="nav-item">
       <a
         href="#"
-        className="nav-icon-button"
+        className="nav-icon-button header-icon"
         onClick={() => props.onOpenHandler()}
         id="hamburgerElement"
       >
