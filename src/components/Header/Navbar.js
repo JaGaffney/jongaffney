@@ -15,6 +15,7 @@ function NavItem(props) {
         href="#"
         className="nav-icon-button"
         onClick={() => props.onOpenHandler()}
+        id="hamburgerElement"
       >
         {props.icon}
       </a>
@@ -53,7 +54,10 @@ function DropdownMenu() {
       <a
         href={props.link ? props.link : "#"}
         className="menu-item"
-        onClick={() => props.goToMenu && setActiveMenu(props.goToMenu)}
+        onClick={() => {
+          props.goToMenu && setActiveMenu(props.goToMenu)
+          document.getElementById("hamburgerElement").focus()
+        }}
         style={props.firstElement ? { marginBottom: props.firstElement } : {}}
         aria-label={`Vist my ${props.children} page`}
       >
