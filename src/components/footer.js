@@ -2,7 +2,9 @@ import React from "react"
 import { Link } from "gatsby"
 
 import { FiGithub, FiYoutube } from "react-icons/fi"
-import { FaLinkedinIn } from "react-icons/fa"
+import { GoCode } from "react-icons/go"
+import { FaLinkedinIn, FaMailBulk } from "react-icons/fa"
+import { BsPersonLinesFill } from "react-icons/bs"
 
 const Footer = () => {
   return (
@@ -15,6 +17,7 @@ const Footer = () => {
               horizontal-align="middle"
               size="2.5em"
             />
+            <span className="footer-link">GitHub</span>
           </a>
         </li>
         <li>
@@ -27,6 +30,7 @@ const Footer = () => {
               horizontal-align="middle"
               size="2.5em"
             />
+            <span className="footer-link">LinkedIn</span>
           </a>
         </li>
         <li>
@@ -39,23 +43,39 @@ const Footer = () => {
               horizontal-align="middle"
               size="2.5em"
             />
+            <span className="footer-link">YouTube</span>
           </a>
         </li>
       </ul>
       <ul>
         <li>
-          <Link to="/projects" className="footer-link">
-            Projects
+          <Link to="/projects" aria-label="Link to Projects page">
+            <GoCode
+              vertical-align="middle"
+              horizontal-align="middle"
+              size="2.5em"
+            />
+            <span className="footer-link">Projects</span>
           </Link>
         </li>
         <li>
-          <Link to="/about" className="footer-link">
-            About
+          <Link to="/about" aria-label="Link to About page">
+            <BsPersonLinesFill
+              vertical-align="middle"
+              horizontal-align="middle"
+              size="2.6em"
+            />
+            <span className="footer-link">About</span>
           </Link>
         </li>
         <li>
-          <Link to="/contact" className="footer-link">
-            Contact
+          <Link to="/contact" aria-label="Link to Contact page">
+            <FaMailBulk
+              vertical-align="middle"
+              horizontal-align="middle"
+              size="2.5em"
+            />
+            <span className="footer-link">Contact</span>
           </Link>
         </li>
       </ul>

@@ -1,9 +1,6 @@
 .footer-container {
   width: 25%;
-  align-self: center;
   display: flex;
-  justify-items: center;
-  align-items: center;
   flex-wrap: wrap;
   a {
     color: var(--light);
@@ -18,15 +15,24 @@
   ul {
     width: 100%;
     margin: 0;
-    margin: 0.6rem;
     list-style: none;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
     align-items: center;
     li {
+      margin: 0.5rem;
       a {
+        min-width: 9rem;
         color: var(--light);
         text-decoration: none;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        span {
+          width: 100%;
+          text-align: center;
+        }
       }
     }
   }
@@ -37,15 +43,7 @@
   letter-spacing: 0.05rem;
   height: 2.5rem;
   width: 5rem;
-  border: solid 2px var(--light);
-  border-radius: 5px;
   padding: 0.6rem;
-  &:hover {
-    border: solid 2px var(--dominant);
-  }
-  &:focus {
-    border: solid 2px var(--accent);
-  }
 }
 .footer-copyright {
   width: 100%;

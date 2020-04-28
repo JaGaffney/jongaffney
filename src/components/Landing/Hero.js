@@ -2,6 +2,8 @@ import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
+import Navbar from "../Header/Navbar"
+
 const Hero = () => {
   const data = useStaticQuery(graphql`
     query {
@@ -17,6 +19,10 @@ const Hero = () => {
 
   return (
     <header className="hero__container hero__container-icon">
+      <div className="hero__container-navbar">
+        <Navbar />
+      </div>
+
       <Img
         fluid={data.placeholderImage.childImageSharp.fluid}
         className="hero__image"

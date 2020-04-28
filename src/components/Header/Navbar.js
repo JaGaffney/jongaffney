@@ -43,6 +43,7 @@ function DropdownMenu() {
         to={props.link}
         className="menu-item"
         onClick={() => props.goToMenu && setActiveMenu(props.goToMenu)}
+        aria-label={`Go to ${props.children} page`}
       >
         <span className="icon-button">{props.leftIcon}</span>
         <span>{props.children}</span>
@@ -54,6 +55,7 @@ function DropdownMenu() {
         className="menu-item"
         onClick={() => props.goToMenu && setActiveMenu(props.goToMenu)}
         style={props.firstElement ? { marginBottom: props.firstElement } : {}}
+        aria-label={`Vist my ${props.children} page`}
       >
         <span className="icon-button">{props.leftIcon}</span>
         <span>{props.children}</span>
@@ -142,14 +144,12 @@ const Navbar = () => {
 
   useEffect(() => {
     document.addEventListener("mousedown", handleClick)
-    // return function to be called when unmounted
     return () => {
       document.removeEventListener("mousedown", handleClick)
     }
   }, [])
 
   const handleClick = e => {
-    console.log("clicking")
     if (node.current.contains(e.target)) {
       return
     }
