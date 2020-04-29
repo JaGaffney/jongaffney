@@ -17,8 +17,8 @@ const About = () => {
           due to the flexability and speed the offer.
         </p>
         <p>
-          My key goal is development with a focus on web accessibility. If you
-          are creating your sites to work on Internet Explorer{" "}
+          My development focus is on web accessibility. If you are creating your
+          sites to work on Internet Explorer{" "}
           <i>
             (which is around <strong>3%</strong> of web users in Australia)
           </i>{" "}

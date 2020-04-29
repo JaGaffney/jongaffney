@@ -59,6 +59,7 @@
   }
   .hero__content-text {
     padding: 0.3rem 4rem 0 1rem;
+    border: none;
   }
   .hero__image {
     -webkit-clip-path: polygon(0% 0, 100% 0, 100% 100%, 0 100%);
@@ -89,6 +90,9 @@
     border-radius: 0;
     padding: 2rem;
     height: auto;
+    p {
+      min-height: 10rem;
+    }
     ul {
       flex-wrap: wrap;
       margin: 0;
@@ -110,5 +114,6 @@
 
   .hero__container-navbar {
     width: 80%;
+    margin: 10rem 0;
   }
 }
