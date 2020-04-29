@@ -1,7 +1,7 @@
 import React from "react"
 import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
-import LogoImage from "../../images/logo.svg"
+import LogoImage from "../../images/logo_2.svg"
 
 import Navbar from "../Header/Navbar"
 
