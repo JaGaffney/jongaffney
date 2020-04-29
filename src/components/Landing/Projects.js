@@ -9,28 +9,27 @@ import LandingImage from "../../images/landing.svg"
 const Projects = () => {
   const webApp = {
     name: "Web Applications",
-    description:
-      "Nostrud consectetur velit culpa est velit consequat dolore reprehenderit.",
+    description: "Web application that allow for desktop, web or both use.",
     image: CivImage,
     tags: ["React", "Electron", "Flask", "Django", "AWS"],
   }
   const dynamicSites = {
-    name: "Data driven websites",
+    name: "Data driven",
     description:
-      "Nostrud consectetur velit culpa est velit consequat dolore reprehenderit. Nostrud consectetur velit culpa est velit consequat dolore reprehenderit.",
+      "Websites created [ADD SOME CONTENT, Placeholder]   , Ideal for e-commerce or data analysis websites",
     image: AfnafImage,
     tags: ["React", "Django", "Laravel", "MongoDB", "MySQL"],
   }
   const staticSites = {
-    name: "Statically generated websites",
+    name: "Statically generated",
     description:
-      "Nostrud consectetur velit culpa est velit consequat dolore reprehenderit.",
+      "Static websites that was easy to host and display your message to your customers. Created to allow for great search engine optimisation while also being lighting fast while also allowing for real time updates from a database. Perfect for landing or brochure based websites.",
     image: LandingImage,
     tags: ["JAM stack", "Gatsby", "AWS-S3", "Netlify"],
   }
 
   return (
-    <div className="landing-projects">
+    <section className="landing-projects">
       <ProjectComponent
         image={webApp.image}
         name={webApp.name}
@@ -49,7 +48,7 @@ const Projects = () => {
         description={staticSites.description}
         tags={staticSites.tags}
       />
-    </div>
+    </section>
   )
 }
 

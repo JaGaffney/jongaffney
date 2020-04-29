@@ -2,17 +2,39 @@ import React from "react"
 
 const About = () => {
   return (
-    <div className="landing-about">
-      <div className="landing-about__content">
+    <section className="landing-about">
+      <article className="landing-about__content">
         <h1>What I do</h1>
         <p>
-          TEMPLATE CONTENT I am a software developer specialising in Web
-          development. I build web applications written with popular frameworks
-          such as Laravel, Express, Django, Flask and using React as a frontend.
+          I am a software developer specialising in Web development. I build
+          fullstack web applications written with a React frontend and a variety
+          of backends depending on the need of the client. These include:
+          <strong> Django</strong>, <strong>Flask</strong>,
+          <strong> Laravel</strong>, <strong>Javalin</strong> and
+          <strong> Node</strong>. With the option of hosting on{" "}
+          <strong>AWS</strong> or if possible, static web servers. My recent
+          focus has been on creating <strong>JAM</strong> stack web applications
+          due to the flexability and speed the offer.
         </p>
-        <button>Link to content here</button>
-      </div>
-    </div>
+        <p>
+          My key goal is development with a focus on web accessibility. If you
+          are creating your sites to work on Internet Explorer{" "}
+          <i>
+            (which is around <strong>3%</strong> of web users in Australia)
+          </i>{" "}
+          but are not making your website accessible{" "}
+          <i>
+            (around <strong>20%</strong> of Australians have difficulty using a
+            website that has not been made accessible)
+          </i>
+          . You are missing out on a market,{" "}
+          <strong>
+            why wouldn’t you want everyone to be able to enjoy the content you
+            have created?
+          </strong>
+        </p>
+      </article>
+    </section>
   )
 }
 export default About

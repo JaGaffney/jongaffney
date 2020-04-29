@@ -45,7 +45,7 @@
   .hero__container {
     display: flex;
     flex-direction: row-reverse;
-    min-height: 25rem;
+    min-height: 40rem;
   }
   .hero__container-navbar {
     position: fixed;
@@ -64,11 +64,19 @@
     -webkit-clip-path: polygon(0% 0, 100% 0, 100% 100%, 0 100%);
     clip-path: polygon(0% 0, 100% 0, 100% 100%, 0 100%);
   }
+
+  .landing-about {
+    min-height: 60rem;
+  }
 }
 
 @media only screen and (max-width: 800px) {
   .footer-container {
     width: 70%;
+  }
+
+  .hero__image {
+    width: 40%;
   }
 
   .projects-component__content-title {
@@ -98,5 +106,9 @@
         }
       }
     }
+  }
+
+  .hero__container-navbar {
+    width: 80%;
   }
 }

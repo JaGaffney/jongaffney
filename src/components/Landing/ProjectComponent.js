@@ -3,7 +3,7 @@ import { Link } from "gatsby"
 
 const ProjectComponent = props => {
   return (
-    <div className="projects-component">
+    <article className="projects-component">
       <div className="projects-component__content-title">
         <Link to="/projects">
           <h1>{props.name}</h1>
@@ -20,7 +20,7 @@ const ProjectComponent = props => {
         </ul>
       </div>
       <div className="projects-component__banner hero-pattern__light"></div>
-    </div>
+    </article>
   )
 }
 
