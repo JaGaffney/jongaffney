@@ -27,11 +27,13 @@ const About = () => {
             (around <strong>20%</strong> of Australians have difficulty using a
             website that has not been made accessible)
           </i>
-          . You are missing out on a market,{" "}
-          <strong>
-            why wouldn’t you want everyone to be able to enjoy the content you
-            have created?
-          </strong>
+          you are missing out on a market.{" "}
+          <p>
+            <strong>
+              Why wouldn’t you want everyone to be able to enjoy the content you
+              have created?
+            </strong>
+          </p>
         </p>
       </article>
     </section>

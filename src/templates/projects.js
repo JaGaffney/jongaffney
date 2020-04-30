@@ -36,56 +36,59 @@ export const query = graphql`
 
 const Projects = ({ data }) => {
   const project = data.contentfulProjects
-
   const name = project.name
-  // const description = project.description
-  //   ? data.description.description
-  //   : "none set"
-  const slug = project.slug
+  const description = project.description.description
   const tags = project.tags.stack
   const url = project.url
   const repo = project.repo
   const video = project.video
   const status = project.status
   const imageData = project.image.fluid
-
-  console.log(project)
   return (
     <Layout>
       <SEO title="Contact" />
+      <div className="generic-container">
+        <div className="project-single__container">
+          <Image
+            fluid={imageData}
+            alt={`${name} Poster`}
+            objectFit="contain"
+            objectPosition="50%"
+            className="single-project-container__image large-image"
+          />
+          <div className="project-single__content">
+            <h1>{name}</h1>
+            <div className="project-single__content-links">
+              <span>Status: {status}</span>
+              <div>
+                <a href={repo}>
+                  <FiGithub
+                    vertical-align="middle"
+                    horizontal-align="middle"
+                    size="2.5rem"
+                  />
+                </a>
+                <a href={url}>
+                  <FiGlobe
+                    vertical-align="middle"
+                    horizontal-align="middle"
+                    size="2.5rem"
+                  />
+                </a>
+              </div>
+            </div>
 
-      <div>
-        <h1>Coming soon: {name}</h1>
+            <ul>
+              {tags.map((item, index) => (
+                <li key={index + item}>{item}</li>
+              ))}
+            </ul>
 
-        <ul>
-          <li>
-            <a href={repo}>
-              <FiGithub
-                vertical-align="middle"
-                horizontal-align="middle"
-                size="1.5rem"
-              />
-            </a>
-          </li>
-          <li>
-            <a href={url}>
-              <FiGlobe
-                vertical-align="middle"
-                horizontal-align="middle"
-                size="1.5rem"
-              />
-            </a>
-          </li>
-          <li>
-            <a href={repo}>
-              <FiYoutube
-                vertical-align="middle"
-                horizontal-align="middle"
-                size="1.5rem"
-              />
-            </a>
-          </li>
-        </ul>
+            <p>{description}</p>
+
+            <div className="project-single__content-video">{video}</div>
+          </div>
+        </div>
       </div>
     </Layout>
   )

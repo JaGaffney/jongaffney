@@ -9,7 +9,7 @@
 .project-contents-inner {
   width: 100%;
   height: 20rem;
-  margin: 3rem;
+  margin: 2rem;
 }
 .single-project-container {
   width: 100%;
@@ -37,13 +37,102 @@
 .single-project-container__content {
   width: 60%;
   padding: 1rem 2rem;
-
+  h1 {
+    text-transform: capitalize;
+  }
   ul {
     margin: 0;
     padding: 0;
     width: 100%;
+    list-style: none;
     display: flex;
     justify-content: flex-start;
+    align-items: center;
+    font-size: 0.9rem;
+    font-weight: 600;
+    text-transform: capitalize;
+    li {
+      margin: 0.2rem;
+      text-align: center;
+      width: 5rem;
+      padding: 0.5rem;
+      color: var(--blue100);
+      background: var(--blue700);
+      border-radius: 20px;
+    }
+  }
+}
+
+//
+// projects/{slug}  pages
+//
+.project-single__container {
+  min-height: 45rem;
+  background: var(--light);
+  width: 100%;
+  height: 100%;
+  margin: 0 0 4rem 0;
+  box-shadow: var(--shadow500);
+  display: flex;
+}
+.large-image {
+  height: auto;
+}
+.project-single__content {
+  width: 60%;
+  padding: 1rem 4rem;
+  color: var(--blue800);
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+  > * {
+    width: 100%;
+  }
+  h1 {
+    text-transform: capitalize;
+    color: var(--accent);
     text-align: center;
   }
+  p {
+    min-height: 15rem;
+    height: auto;
+    background: var(--gray200);
+  }
+  ul {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    list-style: none;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 0.9rem;
+    font-weight: 700;
+    li {
+      margin: 0.2rem;
+      text-align: center;
+      width: 6rem;
+      padding: 0.5rem;
+      color: var(--blue800);
+      background: var(--blue100);
+      border-radius: 20px;
+    }
+  }
+}
+.project-single__content-links {
+  width: 100%;
+  display: flex;
+  div {
+    margin-left: auto;
+  }
+  a {
+    margin: 0 0.5rem;
+  }
+}
+.project-single__content-video {
+  width: 100%;
+  height: 20rem;
+  border: solid 3px black;
+  background: black;
 }
