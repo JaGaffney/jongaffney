@@ -71,7 +71,7 @@
     margin: 0 0 0 1rem;
   }
   .hero__content-text {
-    padding: 0.3rem 4rem 0 1rem;
+    padding: 0.3rem 2rem 0 1rem;
     border: none;
   }
   .hero__image {
@@ -89,6 +89,10 @@
 }
 
 @media only screen and (max-width: 800px) {
+  h1 {
+    font-size: 1.9rem;
+  }
+
   .footer-container {
     width: 70%;
   }
@@ -139,31 +143,60 @@
     width: 80%;
   }
 
+  .landing-projects-component__content-title {
+    h1 {
+      font-size: 1.9rem;
+    }
+  }
   .landing-projects-component__content-data {
     border-radius: 0;
     width: 100%;
     height: auto;
     min-height: 20rem;
-    padding: 2rem 1rem;
+    padding: 2rem 0;
     flex-wrap: nowrap;
     p {
-      width: 80%;
-      padding: 1rem;
+      width: 70%;
+      padding: 0.5rem 1.5rem;
     }
     ul {
-      padding: 0 0.5rem 0 0;
-      width: 20%;
+      padding: 0 0.5rem;
+      width: 30%;
       flex-wrap: wrap;
       margin: 0;
       flex-direction: column;
       li {
         border-radius: 10px;
         margin: auto;
-        width: 5.5rem;
+        width: 100%;
+        font-size: 0.7rem;
       }
     }
   }
   .landing-about {
     padding: 8rem 0;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .hero__image {
+    display: none;
+  }
+  .hero__content {
+    margin: 0;
+  }
+  .hero__content-text {
+    padding: 0.5rem;
+  }
+  .hero__content-text img {
+    width: auto;
+    margin-bottom: 4rem;
+  }
+  .hero__content-container {
+    margin: 5rem 2rem 7rem 2rem;
+  }
+
+  .landing-projects-component__image {
+    margin: 0;
   }
 }
