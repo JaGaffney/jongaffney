@@ -3,6 +3,7 @@ import { graphql, useStaticQuery } from "gatsby"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
+import ProjectComponent from "../components/Projects/ProjectComponent"
 
 const ProjectsPage = () => {
   const data = useStaticQuery(graphql`
@@ -18,11 +19,12 @@ const ProjectsPage = () => {
             }
             url
             repo
+            video
             tags {
               stack
             }
             image {
-              fluid(maxWidth: 400) {
+              fluid(maxWidth: 600) {
                 ...GatsbyContentfulFluid_withWebp
               }
             }
@@ -31,13 +33,21 @@ const ProjectsPage = () => {
       }
     }
   `)
-  //console.log(data)
+  const projects = data.allContentfulProjects.edges
 
   return (
     <Layout>
       <SEO title="Projects" />
 
-      <div></div>
+      <div className="generic-container">
+        {projects.map((item, index) => {
+          return (
+            <div className="project-contents-inner" key={index}>
+              <ProjectComponent data={item.node} />
+            </div>
+          )
+        })}
+      </div>
     </Layout>
   )
 }

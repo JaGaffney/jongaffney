@@ -3,15 +3,19 @@ import { Link } from "gatsby"
 
 const ProjectComponent = props => {
   return (
-    <article className="projects-component">
-      <div className="projects-component__content-title">
+    <article className="landing-projects-component">
+      <div className="landing-projects-component__content-title">
         <Link to="/projects">
           <h1>{props.name}</h1>
         </Link>
       </div>
-      <img src={props.image} alt="" className="projects-component__image" />
+      <img
+        src={props.image}
+        alt=""
+        className="landing-projects-component__image"
+      />
 
-      <div className="projects-component__content-data">
+      <div className="landing-projects-component__content-data">
         <p>{props.description}</p>
         <ul>
           {props.tags.map((item, index) => {
@@ -19,7 +23,7 @@ const ProjectComponent = props => {
           })}
         </ul>
       </div>
-      <div className="projects-component__banner hero-pattern__light"></div>
+      <div className="landing-projects-component__banner hero-pattern__light"></div>
     </article>
   )
 }

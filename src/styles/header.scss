@@ -107,6 +107,7 @@ header {
 
 /* Dropdown Menu */
 .dropdown {
+  z-index: 10;
   position: absolute;
   top: 55px;
   width: 350px;
