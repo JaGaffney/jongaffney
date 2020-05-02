@@ -53,11 +53,20 @@
       text-align: center;
     }
   }
+  //
+  // Generics
+  //
   .generic-container {
     flex-wrap: wrap;
   }
+  //
+  // Projects
+  //
   .project-contents-inner {
     margin: 2rem 0;
+  }
+  .single-project-container__image {
+    width: 30%;
   }
 }
 
@@ -213,6 +222,17 @@
   .landing-about {
     padding: 4rem 0;
   }
+
+  //
+  // projects page
+  //
+  .single-project-container__image {
+    width: 15%;
+  }
+  .single-project-container__content {
+    width: 85%;
+    padding: 1rem;
+  }
 }
 
 @media only screen and (max-width: 450px) {
@@ -243,5 +263,16 @@
 
   .landing-projects-component__image {
     margin: 0;
+  }
+
+  //
+  // projects page
+  //
+  .single-project-container__image {
+    width: 10%;
+  }
+  .single-project-container__content {
+    width: 90%;
+    padding: 1rem 0.5rem;
   }
 }

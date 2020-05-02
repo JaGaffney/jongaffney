@@ -19,7 +19,7 @@ const ProjectComponent = ({ data }) => {
         className="single-project-container__image"
       />
       <div className="single-project-container__content">
-        <h1>{name}</h1>
+        <h1 className="h1-underline__small">{name}</h1>
         <p>{elevator}</p>
 
         <ul>

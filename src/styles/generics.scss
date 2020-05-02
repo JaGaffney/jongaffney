@@ -85,6 +85,7 @@ form {
   }
 }
 .h1-underline__large {
+  color: var(--accent);
   outline: none;
   &:hover {
     color: var(--dominant);
@@ -102,6 +103,33 @@ form {
     left: 0;
     position: absolute;
     width: 10rem;
+  }
+  &:hover:after {
+    background: var(--dominant);
+  }
+  &:focus:after {
+    background: var(--dominant);
+  }
+}
+.h1-underline__small {
+  color: var(--accent);
+  outline: none;
+  &:hover {
+    color: var(--dominant);
+  }
+  &:focus {
+    color: var(--dominant);
+  }
+  position: relative;
+  &:after {
+    background: var(--accent);
+    border-radius: 15px;
+    bottom: -0.5rem;
+    content: "";
+    height: 0.3rem;
+    left: 0;
+    position: absolute;
+    width: 4rem;
   }
   &:hover:after {
     background: var(--dominant);
