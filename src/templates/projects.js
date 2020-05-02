@@ -1,8 +1,7 @@
 import React from "react"
 import { graphql } from "gatsby"
 import Image from "gatsby-image"
-import { Link } from "gatsby"
-import { FiGithub, FiYoutube, FiGlobe } from "react-icons/fi"
+import { FiGithub, FiGlobe } from "react-icons/fi"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -52,8 +51,8 @@ const Projects = ({ data }) => {
           <Image
             fluid={imageData}
             alt={`${name} Poster`}
-            objectFit="contain"
-            objectPosition="50%"
+            objectFit="cover"
+            objectPosition="50% 50%"
             className="single-project-container__image large-image"
           />
           <div className="project-single__content">
@@ -94,6 +93,7 @@ const Projects = ({ data }) => {
                 frameborder="0"
                 allow="autoplay; fullscreen"
                 allowfullscreen
+                title={name}
               ></iframe>
             </div>
           </div>
