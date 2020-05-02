@@ -154,7 +154,7 @@
   grid-column: 7 / span 4;
   grid-row: 1;
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   a {
     text-decoration: none;
   }
@@ -162,12 +162,7 @@
     margin: 0;
     padding: 0 0 1rem 0;
     color: var(--accent);
-    border-bottom: solid 7px var(--accent);
     cursor: pointer;
-    &:hover {
-      color: var(--dominant);
-      border-bottom: solid 7px var(--dominant);
-    }
   }
 }
 .landing-projects-component__content-data {

@@ -6,7 +6,7 @@ const ProjectComponent = props => {
     <article className="landing-projects-component">
       <div className="landing-projects-component__content-title">
         <Link to="/projects">
-          <h1>{props.name}</h1>
+          <h1 className="h1-underline__large">{props.name}</h1>
         </Link>
       </div>
       <img

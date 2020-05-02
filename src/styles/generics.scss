@@ -69,3 +69,44 @@ form {
     font-size: 1.3rem;
   }
 }
+
+.h1-underline {
+  position: relative;
+  &:after {
+    background: var(--accent);
+    border-radius: 15px;
+    bottom: -1.5rem;
+    content: "";
+    height: 0.3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    position: absolute;
+    width: 5rem;
+  }
+}
+.h1-underline__large {
+  outline: none;
+  &:hover {
+    color: var(--dominant);
+  }
+  &:focus {
+    color: var(--dominant);
+  }
+  position: relative;
+  &:after {
+    background: var(--accent);
+    border-radius: 15px;
+    bottom: -0.5rem;
+    content: "";
+    height: 0.3rem;
+    left: 0;
+    position: absolute;
+    width: 10rem;
+  }
+  &:hover:after {
+    background: var(--dominant);
+  }
+  &:focus:after {
+    background: var(--dominant);
+  }
+}

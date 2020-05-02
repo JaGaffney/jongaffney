@@ -4,7 +4,7 @@ const About = () => {
   return (
     <section className="landing-about">
       <article className="landing-about__content">
-        <h1>What I do</h1>
+        <h1 className="h1-underline">What I do</h1>
         <p>
           I am a software developer specialising in Web development. I build
           fullstack web applications written with a <strong>React</strong>{" "}
