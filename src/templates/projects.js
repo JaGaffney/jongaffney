@@ -57,7 +57,7 @@ const Projects = ({ data }) => {
             className="single-project-container__image large-image"
           />
           <div className="project-single__content">
-            <h1>{name}</h1>
+            <h1 className="h1-underline__small">{name}</h1>
             <div className="project-single__content-links">
               <span>Status: {status}</span>
               <div>
@@ -86,7 +86,16 @@ const Projects = ({ data }) => {
 
             <p>{description}</p>
 
-            <div className="project-single__content-video">{video}</div>
+            <div className="project-single__content-video">
+              <iframe
+                src={video}
+                width="100%"
+                height="100%"
+                frameborder="0"
+                allow="autoplay; fullscreen"
+                allowfullscreen
+              ></iframe>
+            </div>
           </div>
         </div>
       </div>
