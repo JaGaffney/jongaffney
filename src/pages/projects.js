@@ -41,6 +41,9 @@ const ProjectsPage = () => {
 
       <div className="generic-container">
         {projects.map((item, index) => {
+          // if (item.node.name === "test") {
+          //   return null
+          // }
           return (
             <div className="project-contents-inner" key={index}>
               <ProjectComponent data={item.node} />

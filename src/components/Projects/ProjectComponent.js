@@ -4,11 +4,23 @@ import Image from "gatsby-image"
 
 const ProjectComponent = ({ data }) => {
   const name = data.name
-  const elevator = data.elevator ? data.elevator.elevator : "none set"
+  let elevator = data.elevator ? data.elevator.elevator : "none set"
+  elevator = truncate(elevator, 300, true)
   const slug = data.slug
   const tags = data.tags.stack
   const imageData = data.image.fluid
 
+  function truncate(str, n, useWordBoundary) {
+    if (str.length <= n) {
+      return str
+    }
+    const subString = str.substr(0, n - 1) // the original check
+    return (
+      (useWordBoundary
+        ? subString.substr(0, subString.lastIndexOf(" "))
+        : subString) + "..."
+    )
+  }
   return (
     <Link to={`/projects/${slug}/`} className="single-project-container">
       <Image

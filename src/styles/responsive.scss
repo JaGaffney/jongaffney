@@ -28,12 +28,23 @@
     height: 13rem;
     margin: 2rem;
   }
+  .landing-projects-component__content-title {
+    // padding: 0 2rem;
+    justify-content: center;
+  }
 
   //
   // Footer
   //
   .footer-container {
     width: 40%;
+  }
+
+  //
+  // Generics
+  //
+  .generic-container {
+    width: 85%;
   }
 }
 
@@ -46,7 +57,7 @@
   // Landing
   //
   .landing-about__content {
-    width: 100%;
+    width: 80%;
     padding: 1rem;
     h1 {
       text-align: left;
@@ -88,6 +99,10 @@
   }
   .single-project-container__image {
     width: 30%;
+  }
+  .single-project-container {
+    height: auto;
+    min-height: 20rem;
   }
 }
 
@@ -231,6 +246,9 @@
   .landing-about {
     padding: 4rem 0;
   }
+  .landing-about__content {
+    width: 95%;
+  }
 
   //
   // Footer
@@ -266,6 +284,10 @@
   .single-project-container__content {
     width: 85%;
     padding: 1rem;
+  }
+  .single-project-container {
+    width: 95%;
+    margin: auto;
   }
 }
 

@@ -8,7 +8,7 @@ import LandingImage from "../../images/landing.svg"
 
 const Projects = () => {
   const webApp = {
-    name: "Web Applications",
+    name: "Web applications",
     description: "Web application created for use on desktop, web or both.",
     image: CivImage,
     tags: ["React", "Electron", "Flask", "Django", "AWS"],
