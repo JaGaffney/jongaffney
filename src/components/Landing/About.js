@@ -7,8 +7,9 @@ const About = () => {
         <h1>What I do</h1>
         <p>
           I am a software developer specialising in Web development. I build
-          fullstack web applications written with a React frontend and a variety
-          of backends depending on the need of the client. These include:
+          fullstack web applications written with a <strong>React</strong>{" "}
+          frontend and a variety of backends depending on the need of the
+          client. These include:
           <strong> Django</strong>, <strong>Flask</strong>,
           <strong> Laravel</strong>, <strong>Javalin</strong> and
           <strong> Node</strong>. With the option of hosting on{" "}
@@ -31,8 +32,10 @@ const About = () => {
         </p>
         <p>
           <strong>
-            Why wouldn’t you want everyone to be able to enjoy the content you
-            have created?
+            <i>
+              Why wouldn’t you want everyone to be able to enjoy the content you
+              have created?
+            </i>
           </strong>
         </p>
       </article>
