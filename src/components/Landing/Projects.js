@@ -23,7 +23,7 @@ const Projects = () => {
   const staticSites = {
     name: "Statically generated",
     description:
-      "Static websites that was easy to host and display your message to your customers. Created to allow for great search engine optimisation while also being lighting fast while also allowing for real time updates from a database. Perfect for landing or brochure based websites.",
+      "Static websites that are easy to host and display your message, to your customers. Created to allow for great search engine optimisation while also being lighting fast while also allowing for real time updates from a database. Perfect for landing or brochure based websites.",
     image: LandingImage,
     tags: ["JAM stack", "Gatsby", "AWS-S3", "Netlify"],
   }

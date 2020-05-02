@@ -12,13 +12,16 @@ header {
 }
 
 .header-container__logo {
+  width: 15rem;
+  height: 4rem;
+  margin: 0.5rem 0 0 0;
   outline: none;
   border-bottom: solid 4px transparent;
   &:focus {
     border-bottom: solid 4px var(--dominant);
   }
   img {
-    height: 3.5rem;
+    height: 100%;
     margin: 0;
     padding: 0;
   }

@@ -28,12 +28,12 @@ const About = () => {
             website that has not been made accessible)
           </i>
           you are missing out on a market.{" "}
-          <p>
-            <strong>
-              Why wouldn’t you want everyone to be able to enjoy the content you
-              have created?
-            </strong>
-          </p>
+        </p>
+        <p>
+          <strong>
+            Why wouldn’t you want everyone to be able to enjoy the content you
+            have created?
+          </strong>
         </p>
       </article>
     </section>
