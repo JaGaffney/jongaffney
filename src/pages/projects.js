@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 
 import Layout from "../components/layout"
@@ -42,7 +42,6 @@ const ProjectsPage = () => {
         elevator: projects[item].node.elevator,
         slug: projects[item].node.slug,
         tags: projects[item].node.tags,
-        tags: projects[item].node.tags,
         image: projects[item].node.image,
       }
     })
@@ -53,13 +52,13 @@ const ProjectsPage = () => {
       <SEO title="Projects" />
 
       <div className="generic-container">
-        {projects.map((item, index) => {
-          if (item.node.name === "test") {
+        {sortedByRankValues.map((item, index) => {
+          if (item.name === "test") {
             return null
           }
           return (
             <div className="project-contents-inner" key={index}>
-              <ProjectComponent data={item.node} />
+              <ProjectComponent data={item} />
             </div>
           )
         })}

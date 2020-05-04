@@ -11,14 +11,14 @@ import { CSSTransition } from "react-transition-group"
 function NavItem(props) {
   return (
     <li className="nav-item">
-      <a
-        href="#"
+      <button
+        // href="#"
         className="nav-icon-button header-icon"
         onClick={() => props.onOpenHandler()}
         id="hamburgerElement"
       >
         {props.icon}
-      </a>
+      </button>
       {props.open && props.children}
     </li>
   )
