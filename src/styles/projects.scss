@@ -97,6 +97,8 @@
   margin: 0 0 4rem 0;
   box-shadow: var(--shadow500);
   display: flex;
+  border: solid 2px var(--accent);
+  border-radius: 10px;
 }
 .large-image {
   height: auto;
@@ -109,6 +111,7 @@
   justify-content: flex-start;
   align-items: center;
   flex-wrap: wrap;
+  border-left: solid 2px var(--accent);
   > * {
     width: 100%;
   }

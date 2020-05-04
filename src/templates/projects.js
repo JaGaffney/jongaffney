@@ -60,20 +60,24 @@ const Projects = ({ data }) => {
             <div className="project-single__content-links">
               <span>Status: {status}</span>
               <div>
-                <a href={repo}>
-                  <FiGithub
-                    vertical-align="middle"
-                    horizontal-align="middle"
-                    size="2.5rem"
-                  />
-                </a>
-                <a href={url}>
-                  <FiGlobe
-                    vertical-align="middle"
-                    horizontal-align="middle"
-                    size="2.5rem"
-                  />
-                </a>
+                {repo && (
+                  <a href={repo}>
+                    <FiGithub
+                      vertical-align="middle"
+                      horizontal-align="middle"
+                      size="2.5rem"
+                    />
+                  </a>
+                )}
+                {url && (
+                  <a href={url}>
+                    <FiGlobe
+                      vertical-align="middle"
+                      horizontal-align="middle"
+                      size="2.5rem"
+                    />
+                  </a>
+                )}
               </div>
             </div>
 
@@ -84,7 +88,7 @@ const Projects = ({ data }) => {
             </ul>
 
             <p>{description}</p>
-            {video.length > 5 && (
+            {video && (
               <div className="project-single__content-video">
                 <iframe
                   src={video}
