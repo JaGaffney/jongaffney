@@ -82,7 +82,7 @@
   // Generics
   //
   .generic-container {
-    flex-wrap: wrap;
+    width: 95%;
   }
   .h1-underline {
     &:after {
@@ -95,14 +95,17 @@
   // Projects
   //
   .project-contents-inner {
-    margin: 2rem 0;
+    margin: 2rem 1rem;
+  }
+  .single-project-container {
+    height: auto;
+    min-height: 30rem;
   }
   .single-project-container__image {
     width: 30%;
   }
-  .single-project-container {
-    height: auto;
-    min-height: 20rem;
+  .single-project-container__content {
+    width: 70%;
   }
 }
 
@@ -206,6 +209,12 @@
     padding: 4rem 0 1rem 0;
     margin: 0;
   }
+  .project-contents-inner {
+    width: 100%;
+  }
+  .single-project-container {
+    min-height: 20rem;
+  }
   .landing-projects-component__content-title {
     justify-content: flex-start;
     padding: 1rem;
@@ -242,6 +251,9 @@
         font-size: 0.7rem;
       }
     }
+  }
+  .single-project-container__content p {
+    min-height: auto;
   }
   .landing-about {
     padding: 4rem 0;
