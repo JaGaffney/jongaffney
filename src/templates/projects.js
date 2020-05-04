@@ -84,18 +84,19 @@ const Projects = ({ data }) => {
             </ul>
 
             <p>{description}</p>
-
-            <div className="project-single__content-video">
-              <iframe
-                src={video}
-                width="100%"
-                height="100%"
-                frameborder="0"
-                allow="autoplay; fullscreen"
-                allowfullscreen
-                title={name}
-              ></iframe>
-            </div>
+            {video.length > 5 && (
+              <div className="project-single__content-video">
+                <iframe
+                  src={video}
+                  width="100%"
+                  height="100%"
+                  frameborder="0"
+                  allow="autoplay; fullscreen"
+                  allowfullscreen
+                  title={name}
+                ></iframe>
+              </div>
+            )}
           </div>
         </div>
       </div>

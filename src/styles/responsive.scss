@@ -44,7 +44,7 @@
   // Generics
   //
   .generic-container {
-    width: 85%;
+    width: 90%;
   }
 }
 
@@ -149,6 +149,9 @@
   .landing-projects-component__image {
     padding: 2rem;
   }
+  .project-contents-inner {
+    width: 80%;
+  }
 
   //
   // Footer
@@ -162,6 +165,7 @@
   //
   .generic-container {
     width: 95%;
+    justify-content: center;
   }
 }
 
@@ -254,6 +258,7 @@
   }
   .single-project-container__content p {
     min-height: auto;
+    height: auto;
   }
   .landing-about {
     padding: 4rem 0;
@@ -281,7 +286,7 @@
   // Generics
   //
   .generic-container {
-    width: 100%;
+    width: 80%;
   }
 
   //

@@ -35,6 +35,19 @@ const ProjectsPage = () => {
   `)
   const projects = data.allContentfulProjects.edges
 
+  const sortedByRankValues = Object.keys(projects)
+    .map(item => {
+      return {
+        name: projects[item].node.name,
+        elevator: projects[item].node.elevator,
+        slug: projects[item].node.slug,
+        tags: projects[item].node.tags,
+        tags: projects[item].node.tags,
+        image: projects[item].node.image,
+      }
+    })
+    .sort((a, b) => b.order - a.order)
+
   return (
     <Layout>
       <SEO title="Projects" />

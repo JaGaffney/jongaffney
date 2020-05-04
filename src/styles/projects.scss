@@ -22,6 +22,7 @@
   background: var(--light);
   box-shadow: var(--shadow500);
   border: solid 2px var(--gray600);
+  border-radius: 10px;
   &:hover {
     border: solid 2px var(--accent);
   }
@@ -34,6 +35,7 @@
   width: 40%;
   margin: 0;
   padding: 0;
+  border-radius: 9px 0 0 9px;
   img {
     object-position: left center !important;
   }
@@ -47,6 +49,7 @@
   justify-content: flex-start;
   align-content: space-between;
   flex-wrap: wrap;
+  border-left: solid 2px var(--accent);
   > * {
     width: 100%;
   }
