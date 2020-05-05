@@ -43,9 +43,10 @@ const ProjectsPage = () => {
         slug: projects[item].node.slug,
         tags: projects[item].node.tags,
         image: projects[item].node.image,
+        order: projects[item].node.order,
       }
     })
-    .sort((a, b) => b.order - a.order)
+    .sort((a, b) => a.order - b.order)
 
   return (
     <Layout>

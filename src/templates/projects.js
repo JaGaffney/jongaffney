@@ -52,7 +52,7 @@ const Projects = ({ data }) => {
             fluid={imageData}
             alt={`${name} Poster`}
             objectFit="cover"
-            objectPosition="50% 50%"
+            objectPosition="0% 50%"
             className="single-project-container__image large-image"
           />
           <div className="project-single__content">
@@ -94,9 +94,9 @@ const Projects = ({ data }) => {
                   src={video}
                   width="100%"
                   height="100%"
-                  frameborder="0"
+                  frameBorder="0"
                   allow="autoplay; fullscreen"
-                  allowfullscreen
+                  allowFullScreen
                   title={name}
                 ></iframe>
               </div>
