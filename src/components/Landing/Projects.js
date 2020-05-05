@@ -9,14 +9,15 @@ import LandingImage from "../../images/landing.svg"
 const Projects = () => {
   const webApp = {
     name: "Web applications",
-    description: "Web application created for use on desktop, web or both.",
+    description:
+      "Web application created for use on desktop, web or both. Allows for a web based UI to be hooked up to any backend you need and bundled into a single application.",
     image: CivImage,
     tags: ["React", "Electron", "Flask", "Django", "AWS"],
   }
   const dynamicSites = {
     name: "Data driven",
     description:
-      "Websites created [ADD SOME CONTENT, Placeholder]   , Ideal for e-commerce or data analysis websites",
+      "Websites created with the purpose of being hooked up to a database. Ideal for e-commerce, stock-management or data analysis websites.",
     image: AfnafImage,
     tags: ["React", "Django", "Laravel", "MongoDB", "MySQL"],
   }

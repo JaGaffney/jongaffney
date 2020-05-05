@@ -32,23 +32,25 @@ const ProjectComponent = ({ data }) => {
     )
   }
   return (
-    <Link to={`/projects/${slug}/`} className="single-project-container">
-      <Image
-        fluid={imageData}
-        alt={`${name} Poster`}
-        objectFit="contain"
-        objectPosition="50%"
-        className="single-project-container__image"
-      />
-      <div className="single-project-container__content">
-        <h1 className="h1-underline__small">{name}</h1>
-        <p>{elevator}</p>
+    <Link to={`/projects/${slug}/`} className="project-contents-inner">
+      <div className="single-project-container">
+        <Image
+          fluid={imageData}
+          alt={`${name} Poster`}
+          objectFit="contain"
+          objectPosition="50%"
+          className="single-project-container__image"
+        />
+        <div className="single-project-container__content">
+          <h1 className="h1-underline__small">{name}</h1>
+          <p>{elevator}</p>
 
-        <ul>
-          {tags.map((item, index) => (
-            <li key={index + item}>{item}</li>
-          ))}
-        </ul>
+          <ul>
+            {tags.map((item, index) => (
+              <li key={index + item}>{item}</li>
+            ))}
+          </ul>
+        </div>
       </div>
     </Link>
   )

@@ -118,13 +118,6 @@ form {
 }
 .h1-underline__small {
   color: var(--accent);
-  outline: none;
-  &:hover {
-    color: var(--dominant);
-  }
-  &:focus {
-    color: var(--dominant);
-  }
   position: relative;
   &:after {
     background: var(--accent);
@@ -135,11 +128,5 @@ form {
     left: 0;
     position: absolute;
     width: 4rem;
-  }
-  &:hover:after {
-    background: var(--dominant);
-  }
-  &:focus:after {
-    background: var(--dominant);
   }
 }

@@ -69,6 +69,7 @@
     p {
       font-size: 1.25rem;
       line-height: 1.5;
+      margin-top: 3rem;
     }
     strong {
       text-align: center;
@@ -333,6 +334,7 @@
   .single-project-container__content {
     width: 85%;
     padding: 1rem;
+    border-left: solid 4px var(--accent);
   }
   .single-project-container {
     width: 95%;
@@ -371,6 +373,10 @@
   }
   .hero__content-container {
     margin: 5rem 2rem 0 2rem;
+  }
+
+  .landing-about__content-tagLine {
+    width: 100% !important;
   }
 
   .landing-projects-component__image {

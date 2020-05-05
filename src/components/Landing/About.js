@@ -30,7 +30,7 @@ const About = () => {
           </i>
           you are missing out on a market.{" "}
         </p>
-        <p>
+        <p className="landing-about__content-tagLine">
           <strong>
             <i>
               Why wouldn’t you want everyone to be able to enjoy the content you

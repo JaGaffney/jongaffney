@@ -58,9 +58,9 @@ const ProjectsPage = () => {
             return null
           }
           return (
-            <div className="project-contents-inner" key={index}>
+            <React.Fragment key={index + "project"}>
               <ProjectComponent data={item} />
-            </div>
+            </React.Fragment>
           )
         })}
       </div>
