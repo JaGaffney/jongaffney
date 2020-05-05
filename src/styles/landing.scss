@@ -61,7 +61,6 @@
   z-index: 2;
 }
 .hero__content-text {
-  border-left: solid 8px var(--accent);
   padding: 0.3rem 5rem 0 1rem;
   h1 {
     text-transform: uppercase;
@@ -195,7 +194,7 @@
       margin: 0.2rem;
       text-align: center;
       width: 6rem;
-      padding: 0.5rem;
+      padding: 0.3rem;
       color: var(--blue800);
       background: var(--blue100);
       border-radius: 20px;

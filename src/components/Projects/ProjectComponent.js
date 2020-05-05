@@ -7,8 +7,18 @@ const ProjectComponent = ({ data }) => {
   let elevator = data.elevator ? data.elevator.elevator : "none set"
   elevator = truncate(elevator, 300, true)
   const slug = data.slug
-  const tags = data.tags.stack
+  let tags = data.tags.stack
+  tags = tagTruncate()
   const imageData = data.image.fluid
+
+  function tagTruncate() {
+    let newArray = tags
+    if (tags.length > 3) {
+      let cutArray = newArray.slice(0, 3)
+      newArray = [...cutArray, "..."]
+    }
+    return newArray
+  }
 
   function truncate(str, n, useWordBoundary) {
     if (str.length <= n) {

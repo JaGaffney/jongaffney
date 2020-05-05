@@ -77,11 +77,12 @@
     li {
       margin: 0.2rem;
       text-align: center;
-      width: auto;
-      padding: 0.5rem;
+      width: 5rem;
+      padding: 0.2rem;
       color: var(--blue100);
       background: var(--blue700);
       border-radius: 20px;
+      font-size: 0.7rem;
     }
   }
 }
@@ -105,7 +106,7 @@
 }
 .project-single__content {
   width: 90%;
-  padding: 1rem 4rem;
+  padding: 1rem 2rem;
   color: var(--blue800);
   display: flex;
   justify-content: flex-start;
@@ -139,7 +140,7 @@
       margin: 0.2rem;
       text-align: center;
       width: 6rem;
-      padding: 0.5rem;
+      padding: 0.3rem;
       color: var(--blue800);
       background: var(--blue100);
       border-radius: 20px;
@@ -149,6 +150,7 @@
 .project-single__content-links {
   width: 100%;
   display: flex;
+  align-items: center;
   div {
     margin-left: auto;
   }
