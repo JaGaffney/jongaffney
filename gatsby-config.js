@@ -11,6 +11,12 @@ module.exports = {
     author: `Jon Gaffney`,
   },
   plugins: [
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-137147205-1",
+      },
+    },
     `gatsby-plugin-react-helmet`,
     `gatsby-plugin-sass`,
     {
