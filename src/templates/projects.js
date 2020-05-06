@@ -46,8 +46,7 @@ const Projects = ({ data }) => {
   const video = project.video
   const status = project.status
   const imageData = project.image.fluid
-  console.log(description)
-  console.log(descriptionSplit)
+
   return (
     <Layout>
       <SEO title={titleName(name)} />
