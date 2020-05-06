@@ -1,10 +1,10 @@
 import React, { useState, useEffect, useRef } from "react"
-import { Link } from "gatsby"
 import { FaChevronRight, FaChevronLeft } from "react-icons/fa"
 import { GiHamburgerMenu } from "react-icons/gi"
 import { GoCode } from "react-icons/go"
 import { FiGithub, FiYoutube } from "react-icons/fi"
 import { FaLinkedinIn, FaExternalLinkAlt, FaMailBulk } from "react-icons/fa"
+import { MdBusiness } from "react-icons/md"
 import { BsPersonLinesFill } from "react-icons/bs"
 import { CSSTransition } from "react-transition-group"
 
@@ -83,6 +83,13 @@ function DropdownMenu() {
             type="internal"
           >
             About
+          </DropdownItem>
+          <DropdownItem
+            leftIcon={<MdBusiness />}
+            link="services"
+            type="internal"
+          >
+            Services
           </DropdownItem>
           <DropdownItem leftIcon={<GoCode />} link="projects" type="internal">
             Projects

@@ -1,13 +1,10 @@
 import React from "react"
-import { Link } from "gatsby"
 
 const AppComponent = props => {
   return (
     <article className="landing-apps-component">
       <div className="landing-apps-component__content-title">
-        <Link to="/projects">
-          <h1 className="h1-underline__large">{props.name}</h1>
-        </Link>
+        <h1 className="h1-underline__small">{props.name}</h1>
       </div>
       <img src={props.image} alt="" className="landing-apps-component__image" />
 

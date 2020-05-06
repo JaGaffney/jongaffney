@@ -5,7 +5,6 @@ import { GiHamburgerMenu } from "react-icons/gi"
 import { GoCode } from "react-icons/go"
 import { FiGithub, FiYoutube } from "react-icons/fi"
 import { FaLinkedinIn, FaExternalLinkAlt, FaMailBulk } from "react-icons/fa"
-import { BsPersonLinesFill } from "react-icons/bs"
 import { CSSTransition } from "react-transition-group"
 
 function NavItem(props) {
@@ -79,14 +78,7 @@ function DropdownMenu() {
       >
         <div className="menu">
           <DropdownItem leftIcon={<GoCode />} link="/projects" type="internal">
-            Projects
-          </DropdownItem>
-          <DropdownItem
-            leftIcon={<BsPersonLinesFill />}
-            link="/about"
-            type="internal"
-          >
-            About
+            All Projects
           </DropdownItem>
           <DropdownItem
             leftIcon={<FaMailBulk />}
@@ -100,7 +92,7 @@ function DropdownMenu() {
             rightIcon={<FaChevronRight />}
             goToMenu="links"
           >
-            Links
+            External Links
           </DropdownItem>
         </div>
       </CSSTransition>

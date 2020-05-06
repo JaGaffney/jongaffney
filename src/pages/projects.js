@@ -47,16 +47,17 @@ const ProjectsPage = () => {
       }
     })
     .sort((a, b) => a.order - b.order)
+    .filter(item => item.name !== "test")
 
   return (
     <Layout>
       <SEO title="Projects" />
 
       <div className="generic-container">
+        <div style={{ margin: "auto", width: "80%" }}>
+          <h1 className="h1-underline__small">Projects</h1>
+        </div>
         {sortedByRankValues.map((item, index) => {
-          if (item.name === "test") {
-            return null
-          }
           return (
             <React.Fragment key={index + "project"}>
               <ProjectComponent data={item} />

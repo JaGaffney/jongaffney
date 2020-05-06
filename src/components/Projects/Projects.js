@@ -33,7 +33,7 @@ const Projects = () => {
   `)
   const projects = data.allContentfulProjects.edges
 
-  const sortedByRankValues = Object.keys(projects)
+  let sortedByRankValues = Object.keys(projects)
     .map(item => {
       return {
         name: projects[item].node.name,
@@ -45,18 +45,18 @@ const Projects = () => {
       }
     })
     .sort((a, b) => a.order - b.order)
+    .filter(item => item.name !== "test")
+  sortedByRankValues.pop()
+  sortedByRankValues.pop()
 
   return (
     <div className="landing-projects" id="landing-projects">
       <div style={{ margin: "auto", width: "80%" }}>
-        <h1 className="h1-underline__small">Active Projects</h1>
+        <h1 className="h1-underline__small">Recent Projects</h1>
       </div>
 
       <div className="landing-projects-container">
         {sortedByRankValues.map((item, index) => {
-          if (item.name === "test") {
-            return null
-          }
           return (
             <React.Fragment key={index + "project"}>
               <ProjectComponent data={item} />
