@@ -47,17 +47,23 @@ const Projects = () => {
     .sort((a, b) => a.order - b.order)
 
   return (
-    <div className="generic-container" id="landing-projects">
-      {sortedByRankValues.map((item, index) => {
-        if (item.name === "test") {
-          return null
-        }
-        return (
-          <React.Fragment key={index + "project"}>
-            <ProjectComponent data={item} />
-          </React.Fragment>
-        )
-      })}
+    <div className="landing-projects" id="landing-projects">
+      <div style={{ margin: "auto", width: "80%" }}>
+        <h1 className="h1-underline__small">Active Projects</h1>
+      </div>
+
+      <div className="landing-projects-container">
+        {sortedByRankValues.map((item, index) => {
+          if (item.name === "test") {
+            return null
+          }
+          return (
+            <React.Fragment key={index + "project"}>
+              <ProjectComponent data={item} />
+            </React.Fragment>
+          )
+        })}
+      </div>
     </div>
   )
 }

@@ -30,7 +30,7 @@ const Apps = () => {
   }
 
   return (
-    <section className="landing-projects" id="landing-about">
+    <section className="landing-apps" id="landing-about">
       <AppComponent
         image={webApp.image}
         name={webApp.name}
