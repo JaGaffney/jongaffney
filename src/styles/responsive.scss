@@ -299,6 +299,14 @@
   .landing-about__content {
     width: 95%;
   }
+  .contact-banner-container {
+    width: 100%;
+    border-radius: 0;
+    min-width: auto;
+    input {
+      padding-left: 1rem;
+    }
+  }
 
   //
   // Footer
@@ -395,6 +403,20 @@
   //
   // Footer
   //
+  .contact-banner-container {
+    span {
+      font-size: 1rem;
+    }
+    form {
+      font-size: 0.8rem;
+      input {
+        height: 3rem;
+      }
+      button {
+        height: 3rem;
+      }
+    }
+  }
 
   //
   // Projects page

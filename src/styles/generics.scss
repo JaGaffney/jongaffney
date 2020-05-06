@@ -107,7 +107,7 @@ form {
     height: 0.3rem;
     left: 0;
     position: absolute;
-    width: 10rem;
+    width: 5rem;
   }
   &:hover:after {
     background: var(--dominant);
@@ -128,5 +128,56 @@ form {
     left: 0;
     position: absolute;
     width: 4rem;
+  }
+}
+
+.contact-banner-container {
+  position: relative;
+  width: 30%;
+  height: 10rem;
+  background: var(--accent);
+  margin: auto;
+  margin-bottom: -6rem;
+  align-self: center;
+  border-radius: 10px;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  padding: 1rem;
+  min-width: 25rem;
+  box-shadow: 0 11px 25px -5px rgba(50, 50, 93, 0.25),
+    0 6px 14px -8px rgba(0, 0, 0, 0.3), 0 -6px 14px -6px rgba(0, 0, 0, 0.025);
+  span {
+    text-align: center;
+    width: 100%;
+    font-size: 18px;
+    letter-spacing: 0.1em;
+    color: var(--gray200);
+    margin: 1rem;
+  }
+  form {
+    align-self: center;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    button {
+      background: var(--gray800);
+      height: 4rem;
+      width: 35%;
+      border: none;
+      color: var(--gray200);
+      border-radius: 0px 10px 10px 0px;
+      outline: none;
+      cursor: pointer;
+    }
+  }
+  input {
+    color: var(--gray700);
+    padding-left: 2rem;
+    background: #edf2f7;
+    border: none;
+    border-radius: 10px 0px 0px 10px;
+    height: 4rem;
+    width: 65%;
   }
 }

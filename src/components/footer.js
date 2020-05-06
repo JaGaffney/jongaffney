@@ -1,10 +1,7 @@
 import React from "react"
-import { Link } from "gatsby"
 
 import { FiGithub, FiYoutube } from "react-icons/fi"
-import { GoCode } from "react-icons/go"
-import { FaLinkedinIn, FaMailBulk } from "react-icons/fa"
-import { BsPersonLinesFill } from "react-icons/bs"
+import { FaLinkedinIn } from "react-icons/fa"
 
 const Footer = () => {
   return (
@@ -47,7 +44,7 @@ const Footer = () => {
           </a>
         </li>
       </ul>
-      <ul>
+      {/* <ul>
         <li>
           <Link to="/projects" aria-label="Link to Projects page">
             <GoCode
@@ -78,13 +75,10 @@ const Footer = () => {
             <span className="footer-link">Contact</span>
           </Link>
         </li>
-      </ul>
+      </ul> */}
 
       <div className="footer-copyright">
-        <span>
-          2020 © Jon Gaffney{" "}
-          <a href="https://jongaffney.tech/">https://jongaffney.tech/</a>
-        </span>
+        <span>Jon Gaffney © 2020</span>
       </div>
     </div>
   )

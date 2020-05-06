@@ -1,7 +1,7 @@
 import React from "react"
 import { Link } from "gatsby"
 
-const ProjectComponent = props => {
+const AppComponent = props => {
   return (
     <article className="landing-projects-component">
       <div className="landing-projects-component__content-title">
@@ -28,4 +28,4 @@ const ProjectComponent = props => {
   )
 }
 
-export default ProjectComponent
+export default AppComponent

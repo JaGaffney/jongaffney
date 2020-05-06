@@ -51,13 +51,6 @@ const ContactPage = () => {
                     value={contactEmail}
                   />
                 </div>
-
-                <div>
-                  <label htmlFor="lnumber">
-                    Contact number <span>*</span>
-                  </label>
-                  <input id="lphone" type="text" name="phone" required />
-                </div>
               </div>
             </div>
 

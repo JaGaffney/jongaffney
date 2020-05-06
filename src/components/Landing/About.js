@@ -15,9 +15,9 @@ const About = () => {
           <strong> Node</strong>. With the option of hosting on{" "}
           <strong>AWS</strong> or if possible, static web servers. My recent
           focus has been on creating <strong>JAM</strong> stack web applications
-          due to the flexability and speed the offer.
+          due to the flexability and speed they offer.
         </p>
-        <p>
+        {/* <p>
           My development focus is on web accessibility. If you are creating your
           sites to work on Internet Explorer{" "}
           <i>
@@ -27,7 +27,7 @@ const About = () => {
           <i>
             (around <strong>20%</strong> of Australians have difficulty using a
             website that has not been made accessible)
-          </i>
+          </i>{" "}
           you are missing out on a market.{" "}
         </p>
         <p className="landing-about__content-tagLine">
@@ -37,7 +37,7 @@ const About = () => {
               have created?
             </i>
           </strong>
-        </p>
+        </p> */}
       </article>
     </section>
   )

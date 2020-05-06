@@ -1,12 +1,12 @@
 import React from "react"
 
-import ProjectComponent from "./ProjectComponent"
+import AppComponent from "./AppComponent"
 
 import CivImage from "../../images/civ.svg"
 import AfnafImage from "../../images/afnaf.svg"
 import LandingImage from "../../images/landing.svg"
 
-const Projects = () => {
+const Apps = () => {
   const webApp = {
     name: "Web applications",
     description:
@@ -30,20 +30,20 @@ const Projects = () => {
   }
 
   return (
-    <section className="landing-projects">
-      <ProjectComponent
+    <section className="landing-projects" id="landing-about">
+      <AppComponent
         image={webApp.image}
         name={webApp.name}
         description={webApp.description}
         tags={webApp.tags}
       />
-      <ProjectComponent
+      <AppComponent
         image={dynamicSites.image}
         name={dynamicSites.name}
         description={dynamicSites.description}
         tags={dynamicSites.tags}
       />
-      <ProjectComponent
+      <AppComponent
         image={staticSites.image}
         name={staticSites.name}
         description={staticSites.description}
@@ -53,4 +53,4 @@ const Projects = () => {
   )
 }
 
-export default Projects
+export default Apps
