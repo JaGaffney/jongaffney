@@ -77,8 +77,15 @@ const Footer = () => {
         </li>
       </ul> */}
 
-      <div className="footer-copyright">
+      <div className="footer-copyright footer-info">
         <span>Jon Gaffney © 2020</span>
+        <span>ABN: 30 488 651 187</span>
+      </div>
+      <div className="footer-copyright">
+        <span>
+          All images, websites and software are copyright of their respective
+          owners.
+        </span>
       </div>
     </div>
   )

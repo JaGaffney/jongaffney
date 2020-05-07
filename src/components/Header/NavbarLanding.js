@@ -1,6 +1,5 @@
 import React, { useState, useEffect, useRef } from "react"
 import { FaChevronRight, FaChevronLeft } from "react-icons/fa"
-import { GiHamburgerMenu } from "react-icons/gi"
 import { GoCode } from "react-icons/go"
 import { FiGithub, FiYoutube } from "react-icons/fi"
 import { FaLinkedinIn, FaExternalLinkAlt, FaMailBulk } from "react-icons/fa"
@@ -12,11 +11,17 @@ function NavItem(props) {
   return (
     <li className="nav-item">
       <button
-        className="nav-icon-button header-icon"
+        className="nav-icon-button header-icon header-icon-landing"
         onClick={() => props.onOpenHandler()}
         id="hamburgerElement"
       >
-        {props.icon}
+        <div
+          className={`hamburger-container ${props.open && "hamburger-change"}`}
+        >
+          <div className="bar1"></div>
+          <div className="bar2"></div>
+          <div className="bar3"></div>
+        </div>
       </button>
       {props.open && props.children}
     </li>
@@ -172,11 +177,7 @@ const Navbar = () => {
 
   return (
     <div ref={node}>
-      <NavItem
-        icon={<GiHamburgerMenu />}
-        onOpenHandler={onOpenHandler}
-        open={open}
-      >
+      <NavItem onOpenHandler={onOpenHandler} open={open}>
         <DropdownMenu></DropdownMenu>
       </NavItem>
     </div>

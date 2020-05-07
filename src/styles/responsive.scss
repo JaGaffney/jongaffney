@@ -40,9 +40,6 @@
   //
   // Footer
   //
-  .footer-container {
-    width: 40%;
-  }
 
   //
   // Generics
@@ -88,9 +85,6 @@
   //
   // Footer
   //
-  .footer-container {
-    width: 50%;
-  }
 
   //
   // Generics
@@ -170,9 +164,6 @@
   //
   // Footer
   //
-  .footer-container {
-    width: 60%;
-  }
 
   //
   // Generics
@@ -312,7 +303,7 @@
   // Footer
   //
   .footer-container {
-    width: 70%;
+    padding: 5rem 0;
     ul {
       li {
         a {
@@ -320,6 +311,16 @@
           width: 5rem;
         }
       }
+    }
+  }
+  .footer-info {
+    width: 90%;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    span {
+      padding: 1rem 0;
     }
   }
 

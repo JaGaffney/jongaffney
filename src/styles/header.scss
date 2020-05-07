@@ -32,30 +32,16 @@ header {
   ul {
     margin: 0;
   }
-  //   a {
-  //     text-decoration: none;
-  //     height: 100%;
-  //     text-transform: uppercase;
-  //     margin: 0 0.5rem;
-  //     cursor: pointer;
-  //     background: none;
-  //     border: none;
-  //     outline: none;
-  //     font-size: 1rem;
-  //     font-weight: 500;
-  //     letter-spacing: 0.05rem;
-  //     color: var(--accent);
-  //     border-bottom: solid 4px transparent;
-  //     padding-bottom: 1rem;
-  //     &:hover {
-  //       color: var(--dominant);
-  //       border-bottom: solid 4px var(--dominant);
-  //     }
-  //     &:focus {
-  //       color: var(--dominant);
-  //       border-bottom: solid 4px var(--dominant);
-  //     }
-  //   }
+}
+
+.header-icon {
+  height: auto;
+  width: auto;
+  border: none;
+  border-radius: 50%;
+  display: flex;
+  padding: 0.5rem;
+  background: inherit;
 }
 
 /* <li> */
@@ -112,7 +98,7 @@ header {
 .dropdown {
   z-index: 10;
   position: absolute;
-  top: 55px;
+  top: 65px;
   width: 350px;
   transform: translateX(-45%);
   background-color: var(--gray300);
@@ -190,4 +176,40 @@ header {
 .menu-secondary-exit-active {
   transform: translateX(110%);
   transition: all var(--speed) ease;
+}
+
+//
+// Hamburger
+//
+.hamburger-container {
+  display: inline-block;
+  cursor: pointer;
+}
+
+.bar1,
+.bar2,
+.bar3 {
+  width: 30px;
+  height: 6px;
+  background-color: var(--accent);
+  margin: 3px 0;
+  transition: 0.4s;
+  border-radius: 10px;
+}
+
+/* Rotate first bar */
+.hamburger-change .bar1 {
+  -webkit-transform: rotate(-45deg) translate(-8px, 6px);
+  transform: rotate(-45deg) translate(-6px, 5px);
+}
+
+/* Fade out the second bar */
+.hamburger-change .bar2 {
+  opacity: 0;
+}
+
+/* Rotate last bar */
+.hamburger-change .bar3 {
+  -webkit-transform: rotate(45deg) translate(-9px, -7px);
+  transform: rotate(45deg) translate(-7px, -7px);
 }
