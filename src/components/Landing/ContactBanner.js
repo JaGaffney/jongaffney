@@ -5,7 +5,7 @@ const ContactBanner = () => {
 
   useEffect(() => {
     if (contactEmail !== "") {
-      localStorage.setItem("email", contactEmail)
+      sessionStorage.setItem("email", contactEmail)
     }
   }, [contactEmail])
 
