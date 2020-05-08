@@ -166,7 +166,7 @@ form {
     width: 100%;
     display: flex;
     justify-content: center;
-    button {
+    a {
       background: var(--gray800);
       height: 4rem;
       width: 35%;
@@ -175,6 +175,9 @@ form {
       border-radius: 0px 10px 10px 0px;
       outline: none;
       cursor: pointer;
+      display: flex;
+      justify-content: center;
+      align-items: center;
     }
   }
   input {
