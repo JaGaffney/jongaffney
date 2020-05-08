@@ -87,20 +87,19 @@
     width: 100%;
     list-style: none;
     display: flex;
-    justify-content: flex-start;
+    justify-content: center;
     align-items: center;
     flex-wrap: wrap;
-    font-size: 0.9rem;
     font-weight: 600;
     text-transform: capitalize;
     li {
       margin: 0.2rem;
       text-align: center;
       width: 5rem;
-      padding: 0.2rem;
+      padding: 1px;
       color: var(--blue100);
       background: var(--blue700);
-      border-radius: 20px;
+      border-radius: 10px;
       font-size: 0.7rem;
     }
   }
@@ -155,11 +154,12 @@
     li {
       margin: 0.2rem;
       text-align: center;
-      width: 6rem;
-      padding: 0.3rem;
-      color: var(--blue800);
-      background: var(--blue100);
-      border-radius: 20px;
+      width: 5rem;
+      padding: 1px;
+      color: var(--blue100);
+      background: var(--blue700);
+      border-radius: 10px;
+      font-size: 0.7rem;
     }
   }
 }

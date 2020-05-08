@@ -13,8 +13,8 @@ const ProjectComponent = ({ data }) => {
 
   function tagTruncate() {
     let newArray = tags
-    if (tags.length > 3) {
-      let cutArray = newArray.slice(0, 3)
+    if (tags.length > 4) {
+      let cutArray = newArray.slice(0, 4)
       newArray = [...cutArray, "..."]
     }
     return newArray

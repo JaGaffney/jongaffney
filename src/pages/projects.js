@@ -55,7 +55,7 @@ const ProjectsPage = () => {
 
       <div className="generic-container">
         <div style={{ margin: "auto", width: "80%" }}>
-          <h1 className="h1-underline__small">Projects</h1>
+          <h1 className="h1-underline__large">Projects</h1>
         </div>
         {sortedByRankValues.map((item, index) => {
           return (

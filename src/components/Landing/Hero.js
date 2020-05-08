@@ -32,7 +32,7 @@ const Hero = () => {
         <div className="hero__content">
           <div className="hero__content-text">
             <img src={LogoImage} alt="logo" />
-            <h1>
+            <h1 className="h1-underline__title">
               Fullstack <span>web Developer</span>
             </h1>
             <h3>

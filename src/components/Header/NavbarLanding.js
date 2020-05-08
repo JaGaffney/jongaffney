@@ -11,7 +11,7 @@ function NavItem(props) {
   return (
     <li className="nav-item">
       <button
-        className="nav-icon-button header-icon header-icon-landing"
+        className="nav-icon-button header-icon header-icon-landing "
         onClick={() => props.onOpenHandler()}
         id="hamburgerElement"
       >

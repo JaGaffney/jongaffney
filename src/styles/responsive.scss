@@ -1,3 +1,11 @@
+@media only screen and (max-width: 1642px) {
+  .h1-underline__title {
+    &:after {
+      background: var(--dominant);
+      width: 7rem;
+    }
+  }
+}
 @media only screen and (max-width: 1500px) {
   //
   // Header
@@ -21,7 +29,7 @@
   .landing-apps-component__image {
     margin: 1.5rem;
     width: auto;
-    height: 18rem;
+    height: 14rem;
   }
   .landing--component__image {
     width: 100%;
@@ -33,8 +41,9 @@
     margin-top: -10rem;
   }
   .landing-apps-component__content-title {
-    // padding: 0 2rem;
+    padding: 2rem 0;
     justify-content: center;
+    //margin: 0 0 1rem 0;
   }
 
   //
@@ -73,10 +82,7 @@
     }
   }
   .landing-apps-component {
-    margin: 5rem 0;
-  }
-  .landing-apps-component__banner {
-    margin-top: -30rem;
+    padding: 5rem 0 0 0;
   }
   .landing-projects-container {
     width: 100%;
@@ -152,13 +158,23 @@
     clip-path: polygon(0% 0, 100% 0, 100% 100%, 0 100%);
   }
   .landing-apps-component__image {
-    padding: 2rem;
+    padding: 0.6rem 2rem;
   }
   .project-contents-inner {
     width: 80%;
   }
   .project-single__content {
     padding: 1rem;
+  }
+  .single-project-container__content {
+    ul {
+      li {
+        padding: 3px;
+        font-size: 0.7rem;
+        width: 4.5rem;
+        border-radius: 5px;
+      }
+    }
   }
 
   //
@@ -226,7 +242,7 @@
   }
   .landing-apps-component__content-title {
     justify-content: flex-start;
-    padding: 1rem;
+    padding: 0 1rem;
   }
   .hero__container-navbar {
     width: 80%;
@@ -237,8 +253,8 @@
     }
   }
   .landing-apps-component__content-data {
-    border-radius: 0;
-    width: 100%;
+    border-radius: 10px;
+    width: 92%;
     height: auto;
     min-height: 20rem;
     padding: 2rem 0;
@@ -260,11 +276,13 @@
       }
     }
   }
+  .landing-apps-component__image {
+    margin: 0;
+    margin-left: auto;
+  }
   .landing-apps-component__banner {
     margin-top: -50rem;
-    width: 85%;
     height: 7rem;
-    border-radius: 30px;
   }
   .single-project-container__content p {
     min-height: auto;
@@ -328,6 +346,7 @@
   }
   .single-project-container__image {
     width: 15%;
+    min-width: 7rem;
   }
   .single-project-container__content {
     width: 85%;
@@ -428,5 +447,6 @@
   .single-project-container__content {
     width: 90%;
     padding: 1rem 0.5rem;
+    min-width: 13rem;
   }
 }
