@@ -10,14 +10,15 @@ const ContactPage = () => {
   // const emailParamDefault = urlParams.get("email")
 
   // query param didnt work when using netlify forms
-  const localEmail = sessionStorage.getItem("email")
+  const windowGlobal = typeof window !== "undefined" && window
+  const localEmail = windowGlobal.sessionStorage.getItem("email")
   let emailDefault = localEmail
   if (localEmail === null) {
     emailDefault = ""
   }
 
   const [contactEmail, setContactEmail] = useState(emailDefault)
-  sessionStorage.removeItem("email")
+  windowGlobal.sessionStorage.removeItem("email")
 
   // need data validation
   return (

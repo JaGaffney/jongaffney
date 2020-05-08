@@ -2,10 +2,11 @@ import React, { useState, useEffect } from "react"
 
 const ContactBanner = () => {
   const [contactEmail, setContactEmail] = useState("")
+  const windowGlobal = typeof window !== "undefined" && window
 
   useEffect(() => {
     if (contactEmail !== "") {
-      sessionStorage.setItem("email", contactEmail)
+      windowGlobal.sessionStorage.setItem("email", contactEmail)
     }
   }, [contactEmail])
 
