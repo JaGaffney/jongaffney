@@ -98,12 +98,12 @@ header {
 .dropdown {
   z-index: 10;
   position: absolute;
-  top: 65px;
+  top: 60px;
   width: 350px;
   transform: translateX(-45%);
   background-color: var(--gray300);
   border: solid 1px var(--gray400);
-  border-radius: 6px;
+  border-radius: 10px;
   padding: 1rem;
   overflow: hidden;
   transition: height var(--speed) ease;

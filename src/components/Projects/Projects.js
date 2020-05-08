@@ -52,7 +52,9 @@ const Projects = () => {
   return (
     <div className="landing-projects" id="landing-projects">
       <div style={{ margin: "auto", width: "80%" }}>
-        <h1 className="h1-underline__large">Recent Projects</h1>
+        <h1 className="h1-underline__title h1-underline__title-sub">
+          Recent Projects
+        </h1>
       </div>
 
       <div className="landing-projects-container">

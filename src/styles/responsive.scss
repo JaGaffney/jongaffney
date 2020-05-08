@@ -5,6 +5,12 @@
       width: 7rem;
     }
   }
+  .h1-underline__title-sub {
+    &:after {
+      background: var(--accent);
+      width: 5rem;
+    }
+  }
 }
 @media only screen and (max-width: 1500px) {
   //
@@ -55,6 +61,12 @@
   //
   .generic-container {
     width: 90%;
+  }
+  .h1-underline__large {
+    &:after {
+      bottom: -1.5rem;
+      height: 0.5rem;
+    }
   }
 }
 
@@ -398,6 +410,7 @@
 
   .landing-apps-component__image {
     margin: 0;
+    margin: 2rem 0 1rem 0;
   }
   .project-single__content {
     padding: 0.5rem;
@@ -448,5 +461,16 @@
     width: 90%;
     padding: 1rem 0.5rem;
     min-width: 13rem;
+  }
+  .project-single__content-links {
+    div {
+      a {
+        margin: 0 0.1rem;
+        svg {
+          height: 2rem;
+          width: 2rem;
+        }
+      }
+    }
   }
 }
