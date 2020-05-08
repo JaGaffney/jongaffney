@@ -3,14 +3,13 @@ import { Link } from "gatsby"
 
 const ContactBanner = () => {
   const [contactEmail, setContactEmail] = useState("")
-  //const windowGlobal = typeof window !== "undefined" && window
 
-  useEffect(() => {
-    if (contactEmail !== "") {
-      sessionStorage.setItem("email", contactEmail)
-      //windowGlobal.sessionStorage.setItem("email", contactEmail)
-    }
-  }, [contactEmail])
+  // useEffect(() => {
+  //   if (contactEmail !== "") {
+  //     sessionStorage.setItem("email", contactEmail)
+  //     //windowGlobal.sessionStorage.setItem("email", contactEmail)
+  //   }
+  // }, [contactEmail])
 
   return (
     <div className="contact-banner-container" id="landing-contact">
@@ -21,7 +20,7 @@ const ContactBanner = () => {
           onChange={e => setContactEmail(e.target.value)}
           value={contactEmail}
         ></input>
-        <Link to="/contact">Get in touch</Link>
+        <Link to={`/contact?email=${contactEmail}`}>Get in touch</Link>
       </form>
     </div>
   )
