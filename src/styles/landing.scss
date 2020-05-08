@@ -32,12 +32,12 @@
   right: 50px;
 }
 .header-icon-landing {
-  background: var(--gray300);
+  background: var(--gray800);
   &:hover {
-    background: var(--gray700);
+    background: var(--gray800);
   }
   &:focus {
-    background: var(--gray700);
+    background: var(--gray900);
   }
   svg {
     margin: 0;

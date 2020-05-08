@@ -18,9 +18,9 @@ function NavItem(props) {
         <div
           className={`hamburger-container ${props.open && "hamburger-change"}`}
         >
-          <div className="bar1"></div>
-          <div className="bar2"></div>
-          <div className="bar3"></div>
+          <div className="bar1 nav-bar1"></div>
+          <div className="bar2 nav-bar2"></div>
+          <div className="bar3 nav-bar3"></div>
         </div>
       </button>
       {props.open && props.children}
@@ -83,7 +83,7 @@ function DropdownMenu() {
       >
         <div className="menu">
           <DropdownItem leftIcon={<GoCode />} link="/projects" type="internal">
-            All Projects
+            Projects
           </DropdownItem>
           <DropdownItem
             leftIcon={<FaMailBulk />}

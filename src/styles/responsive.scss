@@ -222,7 +222,7 @@
     width: 100%;
   }
   .single-project-container {
-    min-height: 20rem;
+    min-height: 25rem;
   }
   .landing-apps-component__content-title {
     justify-content: flex-start;
@@ -266,20 +266,6 @@
     height: 7rem;
     border-radius: 30px;
   }
-  // .landing-apps-component__alt {
-  //   background: var(--blue600);
-  //   div {
-  //     a {
-  //       h1 {
-  //         color: var(--blue100);
-  //         &:after {
-  //           background: var(--blue100);
-  //         }
-  //       }
-  //     }
-  //     box-shadow: none;
-  //   }
-  // }
   .single-project-container__content p {
     min-height: auto;
     height: auto;
@@ -329,6 +315,9 @@
   //
   .generic-container {
     width: 90%;
+  }
+  .h1-underline__small {
+    font-size: 1.3rem;
   }
 
   //
@@ -393,6 +382,17 @@
   }
   .project-single__content {
     padding: 0.5rem;
+    font-size: 0.9rem;
+    ul {
+      font-size: 0.8rem;
+      li {
+        width: 5rem;
+        margin: 0.1rem;
+      }
+    }
+    p {
+      font-size: 0.9rem;
+    }
   }
   .landing-apps-component__banner {
     margin-top: -55rem;

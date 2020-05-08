@@ -49,7 +49,7 @@
 }
 .footer-copyright {
   width: 100%;
-  margin: 1rem;
+  margin: 0.5rem 0;
   color: var(--light);
   display: flex;
   justify-content: center;
@@ -57,11 +57,9 @@
 }
 
 .footer-info {
-  width: 50%;
-  margin: auto;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   span {
-    padding: 0 1rem;
+    width: 28.5%;
   }
 }

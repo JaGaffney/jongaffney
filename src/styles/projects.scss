@@ -63,15 +63,15 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  align-content: space-between;
+  align-content: flex-start;
   flex-wrap: wrap;
+  position: relative;
   border-left: solid 8px var(--accent);
   > * {
     width: 100%;
   }
   h1 {
     text-transform: capitalize;
-    font-size: 1.9rem;
   }
   p {
     line-height: 1.5;
@@ -80,7 +80,10 @@
   ul {
     margin: 0;
     padding: 0;
-    margin-top: auto;
+    position: absolute;
+    bottom: 5px;
+    padding: 0 0.5rem 0 0;
+    right: -1%;
     width: 100%;
     list-style: none;
     display: flex;
