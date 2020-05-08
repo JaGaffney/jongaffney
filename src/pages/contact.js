@@ -1,4 +1,4 @@
-import React, { useState } from "react"
+import React, { useState, useEffect } from "react"
 
 import Layout from "../components/layout"
 import SEO from "../components/seo"
@@ -10,15 +10,16 @@ const ContactPage = () => {
   // const emailParamDefault = urlParams.get("email")
 
   // query param didnt work when using netlify forms
-  const windowGlobal = typeof window !== "undefined" && window
-  const localEmail = windowGlobal.sessionStorage.getItem("email")
-  let emailDefault = localEmail
-  if (localEmail === null) {
-    emailDefault = ""
-  }
+  const [contactEmail, setContactEmail] = useState("")
 
-  const [contactEmail, setContactEmail] = useState(emailDefault)
-  windowGlobal.sessionStorage.removeItem("email")
+  useEffect(() => {
+    const localEmail = sessionStorage.getItem("email")
+    let emailDefault = localEmail
+    if (localEmail === null) {
+      emailDefault = ""
+    }
+    setContactEmail(emailDefault)
+  }, [])
 
   // need data validation
   return (
