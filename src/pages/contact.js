@@ -4,17 +4,20 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 
 const ContactPage = () => {
-  const urlParams = new URLSearchParams(
-    typeof window !== "undefined" && window.location.search
-  )
-  const emailParamDefault = urlParams.get("email")
+  // const urlParams = new URLSearchParams(
+  //   typeof window !== "undefined" && window.location.search
+  // )
+  // const emailParamDefault = urlParams.get("email")
 
-  let emailDefault = emailParamDefault
-  if (emailParamDefault === null) {
+  // query param didnt work when using netlify forms
+  const localEmail = localStorage.getItem("email")
+  let emailDefault = localEmail
+  if (localEmail === null) {
     emailDefault = ""
   }
 
   const [contactEmail, setContactEmail] = useState(emailDefault)
+  localStorage.removeItem("email")
 
   // need data validation
   return (
