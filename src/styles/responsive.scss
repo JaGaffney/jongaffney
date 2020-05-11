@@ -461,7 +461,10 @@
   .single-project-container__content {
     width: 90%;
     padding: 1rem 0.5rem;
-    min-width: 13rem;
+    // min-width: 13rem;
+    ul {
+      position: unset;
+    }
   }
   .project-single__content-links {
     div {

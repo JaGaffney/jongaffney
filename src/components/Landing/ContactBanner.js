@@ -1,15 +1,8 @@
-import React, { useState, useEffect } from "react"
+import React, { useState } from "react"
 import { Link } from "gatsby"
 
 const ContactBanner = () => {
   const [contactEmail, setContactEmail] = useState("")
-
-  // useEffect(() => {
-  //   if (contactEmail !== "") {
-  //     sessionStorage.setItem("email", contactEmail)
-  //     //windowGlobal.sessionStorage.setItem("email", contactEmail)
-  //   }
-  // }, [contactEmail])
 
   return (
     <div className="contact-banner-container" id="landing-contact">
