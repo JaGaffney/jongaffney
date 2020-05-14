@@ -14,8 +14,8 @@ const About = () => {
           <strong> Laravel</strong>, <strong>Javalin</strong> and
           <strong> Node</strong>, with the option of hosting on{" "}
           <strong>AWS</strong>. My recent focus has been creating{" "}
-          <strong>JAM stack</strong> web applications due to the flexability and
-          speed they offer.
+          <strong>JAM stack</strong> web applications due to the flexibility and
+          speed they provide.
         </p>
         {/* <p>
           My development focus is on web accessibility. If you are creating your
