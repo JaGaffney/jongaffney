@@ -27,7 +27,7 @@ function SEO({ description, lang, meta, title }) {
       }}
       title={title}
       titleTemplate={
-        title !== "Jon Gaffney" && `%s | ${site.siteMetadata.title}`
+        title === "Jon Gaffney" ? "" : `%s | ${site.siteMetadata.title}`
       }
       meta={[
         {

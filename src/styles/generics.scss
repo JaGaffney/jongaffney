@@ -170,7 +170,9 @@ form {
       background: var(--gray800);
       height: 4rem;
       width: 35%;
-      border: none;
+      border-bottom: solid 3px transparent;
+      border-top: solid 3px transparent;
+      border-right: solid 3px transparent;
       color: var(--gray200);
       border-radius: 0px 10px 10px 0px;
       outline: none;
@@ -178,15 +180,29 @@ form {
       display: flex;
       justify-content: center;
       align-items: center;
+      &:focus {
+        box-shadow: var(--shadow500);
+        border-bottom: solid 3px var(--light);
+        border-top: solid 3px var(--light);
+        border-right: solid 3px var(--light);
+      }
     }
   }
   input {
     color: var(--gray700);
     padding-left: 2rem;
     background: #edf2f7;
-    border: none;
+    border-bottom: solid 3px transparent;
+    border-top: solid 3px transparent;
+    border-left: solid 3px transparent;
     border-radius: 10px 0px 0px 10px;
     height: 4rem;
     width: 65%;
+    &:focus {
+      box-shadow: var(--shadow500);
+      border-bottom: solid 3px var(--gray800);
+      border-top: solid 3px var(--gray800);
+      border-left: solid 3px var(--gray800);
+    }
   }
 }
