@@ -26,7 +26,7 @@ const ContactPage = () => {
             name="contact"
             method="POST"
             data-netlify="true"
-            action="/contact/thank-you"
+            action="/"
             className="contact-form"
           >
             <input type="hidden" name="form-name" value="contact" />
@@ -36,22 +36,17 @@ const ContactPage = () => {
                 Name or company name <span>*</span>
               </label>
               <input id="lname" type="text" name="name" required />
-
-              <div className="contact-form__information-inner">
-                <div>
-                  <label htmlFor="lemail">
-                    Email <span>*</span>
-                  </label>
-                  <input
-                    id="lemail"
-                    type="email"
-                    name="email"
-                    required
-                    onChange={e => setContactEmail(e.target.value)}
-                    value={contactEmail}
-                  />
-                </div>
-              </div>
+              <label htmlFor="lemail">
+                Email <span>*</span>
+              </label>
+              <input
+                id="lemail"
+                type="email"
+                name="email"
+                required
+                onChange={e => setContactEmail(e.target.value)}
+                value={contactEmail}
+              />
             </div>
 
             <hr className="contact-form__seperator" />
