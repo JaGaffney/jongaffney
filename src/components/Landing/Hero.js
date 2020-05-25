@@ -31,13 +31,13 @@ const Hero = () => {
       <div className="hero__content-container">
         <div className="hero__content">
           <div className="hero__content-text">
-            <img src={LogoImage} alt="logo" />
+            <img src={LogoImage} alt="logo" style={{ minHeight: "2.1rem" }} />
             <h1 className="h1-underline__title">
               Fullstack <span>web Developer</span>
             </h1>
             <h3>
-              From static sites to full web applications and everything in
-              between
+              From static sites to progressive web applications and everything
+              in between
             </h3>
           </div>
         </div>
