@@ -37,7 +37,7 @@ const Hero = () => {
             </h1>
             <h3>
               From static sites to progressive web applications and everything
-              in between
+              in-between
             </h3>
           </div>
         </div>
