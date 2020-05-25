@@ -17,7 +17,7 @@ const Apps = () => {
   const dynamicSites = {
     name: "Data driven",
     description:
-      "Websites created with the purpose of being hooked up to a database. Ideal for e-commerce, stock-management or data analysis websites.",
+      "Progressive websites created with the purpose of being hooked up to a database. Ideal for e-commerce, stock-management or data analysis websites.",
     image: AfnafImage,
     tags: ["React", "Django", "Laravel", "MongoDB", "MySQL"],
   }
