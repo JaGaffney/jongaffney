@@ -47,6 +47,12 @@ button {
       0 4px 8px -4px rgba(0, 0, 0, 0.3), 0 -3px 5px -3px rgba(0, 0, 0, 0.025);
     padding: 0.8rem 2rem 0.8rem 2rem;
     margin: 0.5rem 0 1.8rem 0;
+    outline: none;
+    border: solid 3px transparent;
+    border-radius: 3px;
+    &:focus {
+      border: solid 3px var(--accent);
+    }
   }
   input {
     &:invalid {
@@ -186,10 +192,7 @@ form {
       justify-content: center;
       align-items: center;
       &:focus {
-        box-shadow: var(--shadow500);
-        border-bottom: solid 3px var(--light);
-        border-top: solid 3px var(--light);
-        border-right: solid 3px var(--light);
+        color: #b9d0e7;
       }
     }
   }
@@ -197,17 +200,14 @@ form {
     color: var(--gray700);
     padding-left: 2rem;
     background: #edf2f7;
-    border-bottom: solid 3px transparent;
-    border-top: solid 3px transparent;
-    border-left: solid 3px transparent;
+    border: none;
     border-radius: 10px 0px 0px 10px;
+    outline: none;
     height: 4rem;
     width: 65%;
     &:focus {
-      box-shadow: var(--shadow500);
-      border-bottom: solid 3px var(--gray800);
-      border-top: solid 3px var(--gray800);
-      border-left: solid 3px var(--gray800);
+      background: #b9d0e7;
+      color: #073c72;
     }
   }
 }
