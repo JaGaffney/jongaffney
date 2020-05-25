@@ -7,12 +7,9 @@ const About = () => {
         <h1 className="h1-underline">What I do</h1>
         <p>
           I am a software developer specialising in Web development. I build
-          fullstack web applications written with the
-          <strong> JavaScript</strong> framework (
-          <i>or library depending on who you ask</i>) <strong>React</strong>. I
-          am flexible with backend development and have experience using
-          multiple frameworks across various languages depending on the needs of
-          the client. These include:
+          fullstack web applications written with a <strong>React</strong>{" "}
+          frontend and a variety of backends depending on the need of the
+          client. These include:
           <strong> Django</strong>, <strong>Flask</strong>,
           <strong> Laravel</strong>, <strong>Javalin</strong> and
           <strong> Node</strong>, with the option of hosting on{" "}
@@ -20,6 +17,27 @@ const About = () => {
           <strong>JAM stack</strong> web applications due to the flexibility and
           speed they provide.
         </p>
+        {/* <p>
+          My development focus is on web accessibility. If you are creating your
+          sites to work on Internet Explorer{" "}
+          <i>
+            (which is around <strong>3%</strong> of web users in Australia)
+          </i>{" "}
+          but are not making your website accessible{" "}
+          <i>
+            (around <strong>20%</strong> of Australians have difficulty using a
+            website that has not been made accessible)
+          </i>{" "}
+          you are missing out on a market.{" "}
+        </p>
+        <p className="landing-about__content-tagLine">
+          <strong>
+            <i>
+              Why wouldn’t you want everyone to be able to enjoy the content you
+              have created?
+            </i>
+          </strong>
+        </p> */}
       </article>
     </section>
   )

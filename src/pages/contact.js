@@ -66,7 +66,6 @@ const ContactPage = () => {
                 placeholder="Please enter your enquiry and I will get in touch."
                 rows="6"
                 cols="50"
-                required
               ></textarea>
             </div>
 
