@@ -46,8 +46,8 @@ const Projects = () => {
     })
     .sort((a, b) => a.order - b.order)
     .filter(item => item.name !== "test")
-  sortedByRankValues.pop()
-  sortedByRankValues.pop()
+  // sortedByRankValues.pop()
+  // sortedByRankValues.pop()
 
   return (
     <div className="landing-projects" id="landing-projects">

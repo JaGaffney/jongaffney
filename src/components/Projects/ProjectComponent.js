@@ -33,7 +33,8 @@ const ProjectComponent = ({ data }) => {
   }
   return (
     <Link to={`/projects/${slug}/`} className="project-contents-inner">
-      <div className="single-project-container">
+      <article className="single-project-container">
+        <div className="single-project-container__overlay"></div>
         <Image
           fluid={imageData}
           alt={`${name} Poster`}
@@ -41,6 +42,7 @@ const ProjectComponent = ({ data }) => {
           objectPosition="50%"
           className="single-project-container__image"
         />
+
         <div className="single-project-container__content">
           <h1 className="h1-underline__small">{name}</h1>
           <p>{elevator}</p>
@@ -51,7 +53,7 @@ const ProjectComponent = ({ data }) => {
             ))}
           </ul>
         </div>
-      </div>
+      </article>
     </Link>
   )
 }

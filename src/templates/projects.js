@@ -57,7 +57,7 @@ const Projects = ({ data }) => {
             alt={`${name} Poster`}
             objectFit="cover"
             objectPosition="0% 50%"
-            className="single-project-container__image large-image"
+            className="project-single__content__image large-image"
           />
           <div className="project-single__content">
             <div>
