@@ -47,8 +47,26 @@ module.exports = {
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
       },
     },
-    // this (optional) plugin enables Progressive Web App + Offline functionality
-    // To learn more, visit: https://gatsby.dev/offline
-    // `gatsby-plugin-offline`,
+    {
+      resolve: `gatsby-plugin-manifest`,
+      options: {
+        name: `Jon Gaffney`,
+        short_name: `jon-gaffney`,
+        start_url: `/`,
+        background_color: `#181e2a`,
+        theme_color: `#181e2a`,
+        display: `fullscreen`,
+        icon: `src/images/favicon.png`, // This path is relative to the root of the site.
+      },
+    },
+    "gatsby-plugin-offline",
+    {
+      resolve: `gatsby-plugin-typescript`,
+      options: {
+        isTSX: true, // defaults to false
+        jsxPragma: `jsx`, // defaults to "React"
+        allExtensions: true, // defaults to false
+      },
+    },
   ],
 }
