@@ -32,11 +32,7 @@ const ProjectComponent = ({ data }) => {
     )
   }
   return (
-    <Link
-      to={`/projects/${slug}/`}
-      className="project-contents-inner"
-      aria-label={`Link to ${name} project page`}
-    >
+    <Link to={`/projects/${slug}/`} className="project-contents-inner">
       <article className="single-project-container">
         <div className="single-project-container__overlay"></div>
         <Image
