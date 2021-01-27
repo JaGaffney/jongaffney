@@ -1,7 +1,7 @@
 {
   "name": "jongaffney",
   "private": true,
-  "description": "From static sites to full web applications and everything in between",
+  "description": "From static sites to full web applications and everything in between.",
   "version": "0.1.0",
   "author": "Jon Gaffney <jon.adam.gaffney@gmail.com>",
   "dependencies": {
