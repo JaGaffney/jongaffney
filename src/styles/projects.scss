@@ -146,7 +146,6 @@
   margin: 0 0 4rem 0;
   box-shadow: var(--shadow500);
   display: flex;
-  border: solid 5px var(--accent);
   border-radius: 10px;
 }
 .large-image {
@@ -165,7 +164,6 @@
   width: 90%;
   padding: 2rem 3rem;
   color: var(--blue800);
-  border-left: solid 8px var(--accent);
   > * {
     width: 100%;
   }
