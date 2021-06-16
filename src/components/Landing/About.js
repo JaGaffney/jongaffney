@@ -13,8 +13,7 @@ const About = () => {
           am flexible with backend development and have experience using
           multiple frameworks across various languages depending on the needs of
           the client. These include:
-          <strong> Django</strong>, <strong>Flask</strong>,
-          <strong> Laravel</strong>, <strong>Javalin</strong> and
+          <strong> Django</strong>, <strong>Flask</strong> and
           <strong> Node</strong>, with the option of hosting on{" "}
           <strong>AWS</strong>. My recent focus has been creating{" "}
           <strong>JAM stack</strong> web applications due to the flexibility and

@@ -30,6 +30,7 @@
   transition: 0.5s ease;
   &:hover {
     // border: solid 5px var(--accent);
+    transform: scale(1.05);
     .single-project-container__overlay {
       background-color: rgba(1, 7, 24, 0.7);
     }
@@ -38,6 +39,7 @@
     }
   }
   &:focus {
+    transform: scale(1.05);
     border: solid 5px var(--accent);
     .single-project-container__overlay {
       background-color: rgba(1, 7, 24, 0.7);

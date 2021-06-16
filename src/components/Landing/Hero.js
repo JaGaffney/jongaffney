@@ -33,13 +33,16 @@ const Hero = () => {
           <div className="hero__content-text">
             <img src={LogoImage} alt="logo" style={{ minHeight: "2.1rem" }} />
             <h1 className="h1-underline__title">
-              Fullstack <span>web Developer</span>
+              <span>Fullstack</span> <span>web developer</span>
             </h1>
             <h3>
               From static sites to progressive web applications and everything
               in-between
             </h3>
           </div>
+          <a href="#landing-projects" className="hero__cta-button">
+            View latest projects
+          </a>
         </div>
       </div>
     </header>

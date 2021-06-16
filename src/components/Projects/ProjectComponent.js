@@ -5,7 +5,7 @@ import Image from "gatsby-image"
 const ProjectComponent = ({ data }) => {
   const name = data.name
   let elevator = data.elevator ? data.elevator.elevator : "none set"
-  elevator = truncate(elevator, 300, true)
+  elevator = truncate(elevator, 200, true)
   const slug = data.slug
   let tags = data.tags.stack
   tags = tagTruncate()
