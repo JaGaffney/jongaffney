@@ -151,6 +151,7 @@ form {
 .contact-banner-container {
   position: relative;
   width: 30%;
+  max-width: 800px;
   height: 10rem;
   background: var(--accent);
   margin: auto;
@@ -210,4 +211,10 @@ form {
       color: #073c72;
     }
   }
+}
+
+.spacer {
+  margin: 1rem 0;
+  width: 100%;
+  height: 1rem;
 }

@@ -13,6 +13,9 @@ export const query = graphql`
       description {
         description
       }
+      elevator {
+        elevator
+      }
       url
       repo
       status
@@ -40,6 +43,7 @@ const Projects = ({ data }) => {
   const name = project.name
   const description = project.description.description
   const descriptionSplit = description.split("\n")
+  const elevator = project.elevator.elevator
   const tags = project.tags.stack
   const url = project.url
   const repo = project.repo
@@ -47,65 +51,75 @@ const Projects = ({ data }) => {
   const status = project.status
   const imageData = project.image.fluid
 
+  const code = false
+
   return (
     <Layout>
-      <SEO title={titleName(name)} />
-      <div className="generic-container">
-        <div className="project-single__container">
-          <Image
-            fluid={imageData}
-            alt={`${name} Poster`}
-            objectFit="cover"
-            objectPosition="0% 50%"
-            className="project-single__content__image large-image"
-          />
-          <div className="project-single__content">
+      <div className="project-single__container">
+        <div className="project-single__info">
+          <h1 className="h1-underline__small">{name}</h1>
+
+          <div className="project-single__content-links">
+            <span>Status: {status}</span>
             <div>
-              <h1 className="h1-underline__small">{name}</h1>
-              <div className="project-single__content-links">
-                <span>Status: {status}</span>
-                <div>
-                  {repo && (
-                    <a href={repo}>
-                      <FiGithub
-                        vertical-align="middle"
-                        horizontal-align="middle"
-                        size="2.5rem"
-                      />
-                    </a>
-                  )}
-                  {url && (
-                    <a href={url}>
-                      <FiGlobe
-                        vertical-align="middle"
-                        horizontal-align="middle"
-                        size="2.5rem"
-                      />
-                    </a>
-                  )}
-                </div>
-              </div>
-
-              <ul>
-                {tags.map((item, index) => (
-                  <li key={index + item}>{item}</li>
-                ))}
-              </ul>
+              {repo && (
+                <a href={repo}>
+                  <FiGithub
+                    vertical-align="middle"
+                    horizontal-align="middle"
+                    size="2.5rem"
+                  />
+                </a>
+              )}
+              {url && (
+                <a href={url}>
+                  <FiGlobe
+                    vertical-align="middle"
+                    horizontal-align="middle"
+                    size="2.5rem"
+                  />
+                </a>
+              )}
             </div>
+          </div>
 
-            {descriptionSplit.length > 1 ? (
-              descriptionSplit.map((item, index) => {
-                if (item === "") {
-                  return null
-                } else {
-                  return <p key={index + "-description"}>{item}</p>
-                }
-              })
-            ) : (
-              <p>{description}</p>
-            )}
+          <p>{elevator}</p>
+          <ul>
+            {tags.map((item, index) => (
+              <li key={index + item}>{item}</li>
+            ))}
+          </ul>
+        </div>
 
-            {video && (
+        <Image
+          fluid={imageData}
+          alt={`${name} Poster`}
+          objectFit="cover"
+          objectPosition="0% 50%"
+          className="project-single__content__image large-image"
+        />
+
+        <div className="project-single__content">
+          <h1 className="h1-underline__small">What is it?</h1>
+          {descriptionSplit.length > 1 ? (
+            descriptionSplit.map((item, index) => {
+              if (item === "") {
+                return null
+              } else {
+                return <p key={index + "-description"}>{item}</p>
+              }
+            })
+          ) : (
+            <p>{description}</p>
+          )}
+
+          {video && (
+            <>
+              <div className="spacer"></div>
+              <h1 className="h1-underline__small">Videos</h1>
+              <p>
+                <a href={video}>{video}</a>
+              </p>
               <div className="project-single__content-video">
                 <iframe
                   src={video}
@@ -117,8 +131,26 @@ const Projects = ({ data }) => {
                   title={name}
                 ></iframe>
               </div>
-            )}
-          </div>
+            </>
+          )}
+
+          {code && (
+            <>
+              <div className="spacer"></div>
+              <h1 className="h1-underline__small">Intresting code snippet</h1>
+              {descriptionSplit.length > 1 ? (
+                descriptionSplit.map((item, index) => {
+                  if (item === "") {
+                    return null
+                  } else {
+                    return <p key={index + "-description"}>{item}</p>
+                  }
+                })
+              ) : (
+                <p>{description}</p>
+              )}
+            </>
+          )}
         </div>
       </div>
     </Layout>
