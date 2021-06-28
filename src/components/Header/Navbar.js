@@ -2,7 +2,8 @@ import React, { useState, useEffect, useRef } from "react"
 import { Link } from "gatsby"
 import { FaChevronRight, FaChevronLeft } from "react-icons/fa"
 import { GoCode } from "react-icons/go"
-import { FiGithub, FiYoutube } from "react-icons/fi"
+import { FiGithub, FiYoutube, FiHome } from "react-icons/fi"
+
 import { FaLinkedinIn, FaExternalLinkAlt, FaMailBulk } from "react-icons/fa"
 import { CSSTransition } from "react-transition-group"
 
@@ -82,6 +83,9 @@ function DropdownMenu() {
         onEnter={calcHeight}
       >
         <div className="menu">
+          <DropdownItem leftIcon={<FiHome />} link="/" type="internal">
+            Home
+          </DropdownItem>
           <DropdownItem leftIcon={<GoCode />} link="/projects" type="internal">
             Projects
           </DropdownItem>
